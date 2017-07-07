@@ -3,64 +3,64 @@ data:
     rpms: [postgresql]
   components:
     rpms:
-      basesystem: {rationale: build dependency for postgresql}
-      bash: {rationale: build dependency for postgresql}
-      ca-certificates: {rationale: build dependency for postgresql}
-      chkconfig: {rationale: build dependency for postgresql}
-      coreutils: {rationale: build dependency for postgresql}
-      coreutils-common: {rationale: build dependency for postgresql}
-      crypto-policies: {rationale: build dependency for postgresql}
-      cyrus-sasl-lib: {rationale: build dependency for postgresql}
-      fedora-release: {rationale: build dependency for postgresql}
-      fedora-repos: {rationale: build dependency for postgresql}
-      filesystem: {rationale: build dependency for postgresql}
-      gawk: {rationale: build dependency for postgresql}
-      glibc: {rationale: build dependency for postgresql}
-      glibc-all-langpacks: {rationale: build dependency for postgresql}
-      glibc-common: {rationale: build dependency for postgresql}
-      gmp: {rationale: build dependency for postgresql}
-      grep: {rationale: build dependency for postgresql}
-      info: {rationale: build dependency for postgresql}
-      keyutils-libs: {rationale: build dependency for postgresql}
-      krb5-libs: {rationale: build dependency for postgresql}
-      libacl: {rationale: build dependency for postgresql}
-      libattr: {rationale: build dependency for postgresql}
-      libcap: {rationale: build dependency for postgresql}
-      libcom_err: {rationale: build dependency for postgresql}
-      libcrypt-nss: {rationale: build dependency for postgresql}
-      libdb: {rationale: build dependency for postgresql}
-      libffi: {rationale: build dependency for postgresql}
-      libselinux: {rationale: build dependency for postgresql}
-      libsepol: {rationale: build dependency for postgresql}
-      libsigsegv: {rationale: build dependency for postgresql}
-      libtasn1: {rationale: build dependency for postgresql}
-      libverto: {rationale: build dependency for postgresql}
-      mpfr: {rationale: build dependency for postgresql}
-      ncurses: {rationale: build dependency for postgresql}
-      ncurses-base: {rationale: build dependency for postgresql}
-      ncurses-libs: {rationale: build dependency for postgresql}
-      nspr: {rationale: build dependency for postgresql}
-      nss: {rationale: build dependency for postgresql}
-      nss-pem: {rationale: build dependency for postgresql}
-      nss-softokn: {rationale: build dependency for postgresql}
-      nss-softokn-freebl: {rationale: build dependency for postgresql}
-      nss-sysinit: {rationale: build dependency for postgresql}
-      nss-tools: {rationale: build dependency for postgresql}
-      nss-util: {rationale: build dependency for postgresql}
-      openldap: {rationale: build dependency for postgresql}
-      openssl-libs: {rationale: build dependency for postgresql}
-      p11-kit: {rationale: build dependency for postgresql}
-      p11-kit-trust: {rationale: build dependency for postgresql}
-      pcre: {rationale: build dependency for postgresql}
-      popt: {rationale: build dependency for postgresql}
-      postgresql: {rationale: build dependency for postgresql}
-      postgresql-libs: {rationale: build dependency for postgresql}
-      readline: {rationale: build dependency for postgresql}
-      sed: {rationale: build dependency for postgresql}
-      setup: {rationale: build dependency for postgresql}
-      sqlite-libs: {rationale: build dependency for postgresql}
-      tzdata: {rationale: build dependency for postgresql}
-      zlib: {rationale: build dependency for postgresql}
+      basesystem: {rationale: 'FIXME: Build dependency for glibc'}
+      bash: {rationale: 'FIXME: Build dependency for readline'}
+      ca-certificates: {rationale: 'FIXME: Build dependency for openssl-libs'}
+      chkconfig: {rationale: 'FIXME: Build dependency for nss'}
+      coreutils: {rationale: 'FIXME: Build dependency for nss-sysinit'}
+      coreutils-common: {rationale: 'FIXME: Build dependency for coreutils'}
+      crypto-policies: {rationale: 'FIXME: Build dependency for krb5-libs'}
+      cyrus-sasl-lib: {rationale: 'FIXME: Build dependency for openldap'}
+      fedora-release: {rationale: 'FIXME: Build dependency for setup'}
+      fedora-repos: {rationale: 'FIXME: Build dependency for fedora-release'}
+      filesystem: {rationale: 'FIXME: Build dependency for basesystem'}
+      gawk: {rationale: 'FIXME: Build dependency for krb5-libs'}
+      glibc: {rationale: 'FIXME: Build dependency for postgresql'}
+      glibc-all-langpacks: {rationale: 'FIXME: Build dependency for glibc'}
+      glibc-common: {rationale: 'FIXME: Build dependency for glibc'}
+      gmp: {rationale: 'FIXME: Build dependency for gawk'}
+      grep: {rationale: 'FIXME: Build dependency for krb5-libs'}
+      info: {rationale: 'FIXME: Build dependency for readline'}
+      keyutils-libs: {rationale: 'FIXME: Build dependency for krb5-libs'}
+      krb5-libs: {rationale: 'FIXME: Build dependency for postgresql-libs'}
+      libacl: {rationale: 'FIXME: Build dependency for sed'}
+      libattr: {rationale: 'FIXME: Build dependency for libacl'}
+      libcap: {rationale: 'FIXME: Build dependency for coreutils'}
+      libcom_err: {rationale: 'FIXME: Build dependency for krb5-libs'}
+      libcrypt-nss: {rationale: 'FIXME: Build dependency for cyrus-sasl-lib'}
+      libdb: {rationale: 'FIXME: Build dependency for cyrus-sasl-lib'}
+      libffi: {rationale: 'FIXME: Build dependency for p11-kit-trust'}
+      libselinux: {rationale: 'FIXME: Build dependency for glibc-common'}
+      libsepol: {rationale: 'FIXME: Build dependency for libselinux'}
+      libsigsegv: {rationale: 'FIXME: Build dependency for gawk'}
+      libtasn1: {rationale: 'FIXME: Build dependency for p11-kit-trust'}
+      libverto: {rationale: 'FIXME: Build dependency for krb5-libs'}
+      mpfr: {rationale: 'FIXME: Build dependency for gawk'}
+      ncurses: {rationale: 'FIXME: Build dependency for coreutils'}
+      ncurses-base: {rationale: 'FIXME: Build dependency for ncurses-libs'}
+      ncurses-libs: {rationale: 'FIXME: Build dependency for readline'}
+      nspr: {rationale: 'FIXME: Build dependency for openldap'}
+      nss: {rationale: 'FIXME: Build dependency for openldap'}
+      nss-pem: {rationale: 'FIXME: Build dependency for nss'}
+      nss-softokn: {rationale: 'FIXME: Build dependency for nss'}
+      nss-softokn-freebl: {rationale: 'FIXME: Build dependency for nss-softokn'}
+      nss-sysinit: {rationale: 'FIXME: Build dependency for nss'}
+      nss-tools: {rationale: 'FIXME: Build dependency for openldap'}
+      nss-util: {rationale: 'FIXME: Build dependency for openldap'}
+      openldap: {rationale: 'FIXME: Build dependency for postgresql-libs'}
+      openssl-libs: {rationale: 'FIXME: Build dependency for postgresql-libs'}
+      p11-kit: {rationale: 'FIXME: Build dependency for p11-kit-trust'}
+      p11-kit-trust: {rationale: 'FIXME: Build dependency for ca-certificates'}
+      pcre: {rationale: 'FIXME: Build dependency for libselinux'}
+      popt: {rationale: 'FIXME: Build dependency for chkconfig'}
+      postgresql: {rationale: 'FIXME: Build dependency for requested by user'}
+      postgresql-libs: {rationale: 'FIXME: Build dependency for postgresql'}
+      readline: {rationale: 'FIXME: Build dependency for postgresql'}
+      sed: {rationale: 'FIXME: Build dependency for krb5-libs'}
+      setup: {rationale: 'FIXME: Build dependency for basesystem'}
+      sqlite-libs: {rationale: 'FIXME: Build dependency for nss-softokn'}
+      tzdata: {rationale: 'FIXME: Build dependency for glibc-common'}
+      zlib: {rationale: 'FIXME: Build dependency for postgresql'}
   dependencies:
     buildrequires: {base-runtime: f26, common-build-dependencies: f26, common-build-dependencies-bootstrap: f26,
       perl: f26, shared-userspace: f26}

@@ -5,6 +5,7 @@ data:
   #name: ""
   #stream: ""
   #version: 0
+  name: 'test'
   summary: 'The programs needed to create and run a PostgreSQL server'
   description: |-
     PostgreSQL is an advanced Object-Relational database management system
@@ -47,4 +48,3 @@ data:
       oniguruma:
         rationale: 'Build dependency (for slang)'
         ref: f26
-        

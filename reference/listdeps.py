@@ -5,7 +5,7 @@ import subprocess
 import string
 
 module = modulemd.ModuleMetadata()
-module.load("test.yaml")
+module.load("postgres.yaml")
 module.components.clear_rpms()
 
 for item in module.api.rpms:
