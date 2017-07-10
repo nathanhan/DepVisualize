@@ -1,0 +1,50 @@
+data:
+  api:
+    rpms: [postgresql]
+  components:
+    rpms:
+      coreutils-common: {rationale: 'FIXME: Runtime dependency for coreutils'}
+      cyrus-sasl-lib: {rationale: 'FIXME: Runtime dependency for openldap'}
+      fedora-release: {rationale: 'FIXME: Runtime dependency for setup'}
+      fedora-repos: {rationale: 'FIXME: Runtime dependency for fedora-release'}
+      glibc-all-langpacks: {rationale: 'FIXME: Runtime dependency for glibc'}
+      glibc-common: {rationale: 'FIXME: Runtime dependency for glibc'}
+      info: {rationale: 'FIXME: Runtime dependency for readline'}
+      keyutils-libs: {rationale: 'FIXME: Runtime dependency for krb5-libs'}
+      krb5-libs: {rationale: 'FIXME: Runtime dependency for postgresql-libs'}
+      libacl: {rationale: 'FIXME: Runtime dependency for sed'}
+      libattr: {rationale: 'FIXME: Runtime dependency for libacl'}
+      libcom_err: {rationale: 'FIXME: Runtime dependency for krb5-libs'}
+      libcrypt-nss: {rationale: 'FIXME: Runtime dependency for cyrus-sasl-lib'}
+      ncurses-base: {rationale: 'FIXME: Runtime dependency for ncurses-libs'}
+      ncurses-libs: {rationale: 'FIXME: Runtime dependency for readline'}
+      nss-softokn-freebl: {rationale: 'FIXME: Runtime dependency for nss-softokn'}
+      nss-sysinit: {rationale: 'FIXME: Runtime dependency for nss'}
+      nss-tools: {rationale: 'FIXME: Runtime dependency for openldap'}
+      openssl-libs: {rationale: 'FIXME: Runtime dependency for postgresql-libs'}
+      p11-kit-trust: {rationale: 'FIXME: Runtime dependency for ca-certificates'}
+      postgresql: {rationale: 'FIXME: Runtime dependency for requested by user'}
+      postgresql-libs: {rationale: 'FIXME: Runtime dependency for postgresql'}
+      sqlite-libs: {rationale: 'FIXME: Runtime dependency for nss-softokn'}
+  dependencies:
+    buildrequires: {base-runtime: f26, common-build-dependencies: f26, common-build-dependencies-bootstrap: f26,
+      perl: f26, shared-userspace: f26}
+    requires: {base-runtime: f26}
+  description: 'PostgreSQL is an advanced Object-Relational database management system
+
+    (DBMS). The postgresql-server package contains the programs needed to
+
+    create and run a PostgreSQL server, which will in turn allow you to create
+
+    and maintain PostgreSQL databases.'
+  license:
+    content: [PostgreSQL]
+    module: [MIT]
+  profiles:
+    client:
+      rpms: [postgresql]
+    default:
+      rpms: [postgresql-server]
+  summary: The programs needed to create and run a PostgreSQL server
+document: modulemd
+version: 1

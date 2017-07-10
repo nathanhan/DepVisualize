@@ -7,4 +7,6 @@ python3-modulemd
 
 Copy of Fedora-26-Beta-repos.cfg in nahanmodule directory
 
-Base-runtime, shared-userspace, and common-build-dependencies modulemd files in nahanmodule directory
+Base-runtime, shared-userspace, and common-build-dependencies modulemd files in nahanmodule/yamls/ directory
+
+python3-graphviz and graphviz
