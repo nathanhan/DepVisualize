@@ -6,19 +6,19 @@ import string
 
 #open and prep modulemd file to operate on
 module = modulemd.ModuleMetadata()
-module.load("postgresql.yaml")
+module.load("yamls/postgresql.yaml")
 module.components.clear_rpms()
 module.clear_requires()
 
 #open Big 3 modulemd files to reference
 bruntime = modulemd.ModuleMetadata()
-bruntime.load("base-runtime.yaml")
+bruntime.load("yamls/base-runtime.yaml")
 
 commonbuilddep = modulemd.ModuleMetadata()
-commonbuilddep.load("common-build-dependencies.yaml")
+commonbuilddep.load("yamls/common-build-dependencies.yaml")
 
 sharedus = modulemd.ModuleMetadata()
-sharedus.load("shared-userspace.yaml")
+sharedus.load("yamls/shared-userspace.yaml")
 
 #depchase every api module, store in dict with what it's a dependency for
 for item in module.api.rpms:
