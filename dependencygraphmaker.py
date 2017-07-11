@@ -1,18 +1,10 @@
 #!/usr/bin/env python3
 
-import modulemd
-import subprocess
-import string
-import pydot
 import nahan
-
 
 #read in and store input
 big3, custom, ignore = nahan.readgraphmakerinput("graphmaker_input.txt")
 big3 = nahan.onetimeload(big3)
-
-#generate dot structure
-dot = pydot.Dot(graph_type='digraph')
 
 for item in custom:
 

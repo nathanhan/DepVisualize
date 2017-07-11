@@ -1,0 +1,14 @@
+infra_modules_start
+	yamls/base-runtime.yaml
+	yamls/common-build-dependencies.yaml
+	yamls/shared-userspace.yaml
+	yamls/httpd.yaml
+infra_modules_end
+
+custom_modules_api_start
+	php
+	postgresql
+custom_modules_api_end
+
+ignore_start
+ignore_end

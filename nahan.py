@@ -44,6 +44,16 @@ def onetimeload(inframodules):
 		dictionary[inframodulename] = modfile.api.rpms
 	return dictionary
 
+def readgraphmakerinput(file):
+
+	with open(file) as inputfile:
+		content = [x.strip() for x in inputfile.readlines()]
+		content = [x for x in content if x]
+		big3 = content[content.index("infra_modules_start")+1:content.index("infra_modules_end")]
+		custom = content[content.index("custom_modules_api_start")+1:content.index("custom_modules_api_end")]
+		ignore = content[content.index("ignore_start")+1:content.index("ignore_end")]
+	return [big3,custom,ignore]
+
 def isinbigthree(packname,loadedinfra):
 
 	for key in loadedinfra:
@@ -73,13 +83,15 @@ def pastebig3(dictionary, toignore, big3):
 				#delete values matching toignore names
 				elif value == "requested by user" or value in toignore:
 					dictionary[key][index] = ""
+#				if value == key:
+#					dictionary[key][index] = ""
 			#delete duplicate connections and empty values
 			dictionary[key] = list(set([x for x in dictionary[key] if x]))
 			#delete keys matching toignore names and empty keys
 			if dictionary[key] == [] or key in toignore:
 				del dictionary[key]
 
+#def walkforloose(towalk, dictionary, big3):
 
-
-		#if key not in dictionary.values() and key != "postgresql":
-		#	del dictionary[key]
+#	for key in list(dictionary):
+#		if no value in big3
