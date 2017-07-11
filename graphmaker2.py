@@ -3,8 +3,6 @@
 import modulemd
 import subprocess
 import string
-import graphviz
-from graphviz import Digraph
 import pydot
 import nahan
 
@@ -14,20 +12,23 @@ with open("exampleinput.txt") as inputfile:
 	content = [x.strip() for x in inputfile.readlines()]
 	content = [x for x in content if x]
 	big3 = content[content.index("infra_modules_start")+1:content.index("infra_modules_end")]
+	big3 = nahan.onetimeload(big3)
 	custom = content[content.index("custom_modules_api_start")+1:content.index("custom_modules_api_end")]
 	ignore = content[content.index("ignore_start")+1:content.index("ignore_end")]
+	#existing = content[content.index("existing_modules_start")+1:content.index("existing_modules_end")]
 
 #generate dot structure
 dot = pydot.Dot(graph_type='digraph')
 
-#establish nodes
 for item in custom:
 
 	deps = nahan.chasedeps(item)
-	nahan.pastebig3(deps,ignore+["fedora-release","fedora-repos"])
+	nahan.pastebig3(deps,ignore+["fedora-release","fedora-repos"], big3)
+#	nahan.resolveexisting(deps,existing)
 
+	#draw nodes
 	for key in deps:
-		if nahan.isinbigthree(key) == "is-it":
+		if nahan.isinbigthree(key, big3) == "is-it":
 			dot.add_node(pydot.Node(key, shape="box"))
 		elif key == item:
 			dot.add_node(pydot.Node(key))
@@ -38,6 +39,4 @@ for item in custom:
 		for value in deps[key]:
 			dot.add_edge(pydot.Edge(key,value))
 
-dot.write_svg("dot2.svg")
-
-#constraint="false"
+dot.write_svg("dot3.svg")

@@ -3,13 +3,16 @@
 import modulemd
 import subprocess
 import string
+import os
 
 def simplifypackname(name):
+
 	parseprocess = subprocess.run("./outputparse2.sh",input=(name+"\n").encode("utf-8"),stdout=subprocess.PIPE)
 	return parseprocess.stdout.decode("utf-8")[:-1]
 
 #wrapper for depchase
 def chasedeps(packname):
+
 	#run depchase verbose on packname package
 	test = subprocess.run(["depchase","-a", "x86_64","-c","Fedora-26-Beta-repos.cfg","-vv","resolve", packname],stdout=subprocess.PIPE,stderr=subprocess.PIPE)
 	rawresults = test.stdout
@@ -29,74 +32,54 @@ def chasedeps(packname):
 			index+=1
 	finaldependencyinfo[simplifypackname(depinfo2[0])] = list(set([simplifypackname(i) for i in [i.split(" requires")[0][2:] for i in depinfo2[1:]]]))
 	return finaldependencyinfo
-	#returns dict with runtime dependency packages as keys and rationale as values
+	#returns dictionary with runtime dependency packages as keys and rationale as values
 
-#open Big 3 modulemd files to reference, need this outside since modulemd forgets to close file streams
-bruntime = modulemd.ModuleMetadata()
-bruntime.load("yamls/base-runtime.yaml")
+def onetimeload(inframodules):
 
-commonbuilddep = modulemd.ModuleMetadata()
-commonbuilddep.load("yamls/common-build-dependencies.yaml")
+	dictionary = {}
+	modfile = modulemd.ModuleMetadata()
+	for location in inframodules:
+		modfile.load(location)
+		inframodulename = os.path.basename(location).split(".yaml")[0]
+		dictionary[inframodulename] = modfile.api.rpms
+	return dictionary
 
-sharedus = modulemd.ModuleMetadata()
-sharedus.load("yamls/shared-userspace.yaml")
+def isinbigthree(packname,loadedinfra):
 
-def isinbigthree(packname):
+	for key in loadedinfra:
+		if packname == key:
+			return "is-it"
+		elif packname in loadedinfra[key]:
+			return key
+	return ""
 
-	if packname in bruntime.api.rpms:
-		return "base-runtime"
-	elif packname in commonbuilddep.api.rpms:
-		return "common-build-dependencies"
-	elif packname in sharedus.api.rpms:
-		return "shared-userspace"
-	elif packname in ["base-runtime","shared-userspace","common-build-dependencies"]:
-		return "is-it"
-	else:
-		return ""
+def pastebig3(dictionary, toignore, big3):
 
-def pastebig3(dict, toignore):
+	for key in big3:
+		if key not in dictionary:
+			dictionary[key] = []
 
-	dict["base-runtime"] = []
-	dict["shared-userspace"] = []
-	dict["common-build-dependencies"] = []
-
-	for key in list(dict):
-		if isinbigthree(key) != "" and isinbigthree(key) != "is-it":
-			dict[isinbigthree(key)]+=dict[key]
-			del dict[key]
+	for key in list(dictionary):
+		#if key is in big3, merge deps with big3 and remove from individual consideration
+		if isinbigthree(key,big3) != "" and isinbigthree(key,big3) != "is-it":
+			dictionary[isinbigthree(key,big3)]+=dictionary[key]
+			del dictionary[key]
 		else:
 
-			for index, value in enumerate(list(dict[key])):
-				if isinbigthree(value) != "":
-					dict[key][index] = isinbigthree(value)
+			for index, value in enumerate(list(dictionary[key])):
+				#if value is in big3, replace with big3 name
+				if isinbigthree(value,big3) != "" and isinbigthree(value,big3) != "is-it":
+					dictionary[key][index] = isinbigthree(value,big3)
+				#delete values matching toignore names
 				elif value == "requested by user" or value in toignore:
-					dict[key][index] = ""
-			dict[key] = list(set([x for x in dict[key] if x]))
-			if dict[key] == [] or key in toignore:
-				del dict[key]
-		#if key not in dict.values() and key != "postgresql":
-		#	del dict[key]
+					dictionary[key][index] = ""
+			#delete duplicate connections and empty values
+			dictionary[key] = list(set([x for x in dictionary[key] if x]))
+			#delete keys matching toignore names and empty keys
+			if dictionary[key] == [] or key in toignore:
+				del dictionary[key]
 
-#old FULL FUNCTIONING: replace entries in dependency dictionary with big3 names
-#def pastebig3(dict):
-#
-#	dict["base-runtime"] = []
-#	dict["shared-userspace"] = []
-#	dict["common-build-dependencies"] = []
-#
-#	for key in list(dict):
-#		if isinbigthree(key) != "" and isinbigthree(key) != "is-it":
-#			dict[isinbigthree(key)]+=dict[key]
-#			del dict[key]
-#		else:
-#			for index, value in enumerate(list(dict[key])):
-#				if isinbigthree(value) != "":
-#					if isinbigthree(key)!= "is-it":
-#						dict[key][index] = isinbigthree(value)
-#					else:
-#						dict[key][index] = ""
-#
-#	#prune all self-references within big 3 modules
-#	dict["base-runtime"] = [x for x in dict["base-runtime"] if x]
-#	dict["shared-userspace"] = [x for x in dict["shared-userspace"] if x]
-#	dict["common-build-dependencies"] = [x for x in dict["common-build-dependencies"] if x]
+
+
+		#if key not in dictionary.values() and key != "postgresql":
+		#	del dictionary[key]

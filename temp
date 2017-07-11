@@ -1,0 +1,426 @@
+data:
+  api:
+    rpms: [glibc-langpack-vi, libsss_idmap, basesystem, glibc-langpack-wae, glibc-langpack-el,
+      glibc-langpack-sc, kernel-PAE-core, iwl2030-firmware, glibc-langpack-gl, iwl6000g2b-firmware,
+      dbus, iwl7260-firmware, libgccjit, openssl, c-ares-devel, libffi, grub2-tools,
+      qrencode-devel, glibc-langpack-ml, glibc-langpack-bho, glibc-langpack-om, glibc-langpack-ko,
+      libassuan-devel, gnutls, glibc-langpack-cy, microdnf, zlib-static, glibc-langpack-he,
+      librtas-devel, go-srpm-macros, mactel-boot, glibc-langpack-ff, crypto-policies,
+      glibc-langpack-id, syslinux, python3-packaging, glibc-langpack-fil, libverto-libev,
+      dbus-libs, ustr-debug-static, expat-static, glibc-langpack-es, guile-devel,
+      libsigsegv-static, nspr, gobject-introspection, libss-devel, glibc-langpack-br,
+      libnetfilter_conntrack-devel, glibc-headers, python3-solv, iwl4965-firmware,
+      libfdt, elfutils-libelf-devel, glibc-langpack-fi, e2fsprogs-devel, iptables-utils,
+      libcurl, iwl5150-firmware, findutils, python3-magic, libstdc++, libuuid-devel,
+      glibc-langpack-tig, libdb-cxx-devel, fedora-logos-httpd, extlinux-bootloader,
+      glibc-langpack-niu, python3-gpg, glibc-langpack-te, libsemanage-static, glibc-langpack-cmn,
+      gpgme-devel, libsolv-tools, mokutil, glibc-langpack-lv, libdb-sql, audit-libs-devel,
+      gcc-objc++, libitm, libtsan, libdb-tcl, libdb-java-devel, file, rpm, gmp-static,
+      libatomic-static, glibc-langpack-nn, elfutils, sg3_utils-devel, gnutls-c++,
+      libverto-libev-devel, libgo, powerpc-utils, libatomic_ops, e2fsprogs, glibc-langpack-da,
+      cyrus-sasl-lib, chkconfig, hfsutils, glibc-devel, libdb-devel-static, system-python,
+      python-packaging-doc, libgccjit-devel, glibc-langpack-sk, libsolv, popt-devel,
+      librtas, lvm2, libpkgconf, python3-six, grep, shim, kernel-lpae-modules-extra,
+      efibootmgr, uboot-images-armv8, publicsuffix-list, glibc-langpack-ku, libarchive,
+      pcre-tools, pth, libsemanage, librepo, libnghttp2-devel, xz-devel, glibc-langpack-mai,
+      glibc-langpack-tk, glibc-nss-devel, glibc-langpack-bs, gc-devel, libatomic,
+      glibc-langpack-tn, dbus-tests, libmetalink, device-mapper-event, bzip2-static,
+      gcc-offload-nvptx, libgnat-devel, glibc-langpack-fo, glibc-langpack-af, libpng-static,
+      libsss_nss_idmap-devel, python3-babeltrace, libaio-devel, libatomic_ops-devel,
+      glibc-langpack-anp, libmpc, glibc-langpack-tg, python3-devel, bzip2-libs, glibc-langpack-sid,
+      libertas-usb8388-firmware, rpm-plugin-ima, expat, filesystem, libxml2, iwl6000g2a-firmware,
+      gcc-gfortran, elfutils-devel, grub2-efi, glibc-langpack-ru, libservicelog, gmp-devel,
+      ncurses-c++-libs, glibc-langpack-tt, libselinux, pcre-cpp, libseccomp, cyrus-sasl-ntlm,
+      libcom_err-devel, gawk-devel, pam-devel, p11-kit, pkgconf-m4, ncurses-base,
+      libuuid, glibc-langpack-ps, libfdisk-devel, libsepol-devel, zip, gettext-libs,
+      flex-devel, glibc-langpack-xh, nss-sysinit, iptables-devel, libservicelog-devel,
+      libcap-ng-devel, libtasn1-devel, pcre-devel, pcre-utf16, c-ares, glibc-langpack-hsb,
+      python3-librepo, pcre-static, libitm-static, pcre-doc, libpwquality-devel, lua-libs,
+      elfutils-libelf-devel-static, libselinux-utils, glibc-langpack-it, glibc-langpack-az,
+      fedora-logos, ncurses-term, openldap-clients, syslinux-nonlinux, glibc-langpack-wal,
+      elfutils-libelf, freetype-devel, babeltrace, libertas-sd8686-firmware, libverto-devel,
+      libcilkrts-static, cpp, glibc-langpack-pa, make-devel, lvm2-python3-libs, efivar,
+      gdb-headless, glibc-all-langpacks, libksba, glibc-langpack-bem, glibc-locale-source,
+      glibc-langpack-mni, libmnl-static, iwl135-firmware, xz-static, libnfnetlink,
+      veritysetup, glibc-langpack-nds, isl, glibc-langpack-ti, keyutils-libs, dbus-devel,
+      mtools, libsss_nss_idmap, glibc-langpack-yue, libgcrypt-devel, libcrypt, glibc-langpack-gd,
+      glibc-langpack-uk, krb5-libs, libcap-devel, acl, iwl6050-firmware, mpfr-devel,
+      info, glibc-langpack-kl, audit-libs, kmod-devel, glibc-langpack-nhn, libgfortran-static,
+      libgfortran, libbabeltrace, libev-libevent-devel, glibc-langpack-ak, device-mapper-event-devel,
+      fuse-libs, kernel-PAEdebug-modules-extra, sqlite-devel, libmpc-devel, lvm2-libs,
+      python3-pyparsing, glibc-langpack-szl, libunistring, systemd-devel, grubby,
+      python3, iwl105-firmware, cryptsetup-devel, pth-devel, glibc-langpack-ast, libacl,
+      libss, nss-softokn, python3-hawkey, glibc-langpack-sl, glibc-langpack-lij, lua,
+      libcap-ng-utils, glibc-langpack-my, glibc-langpack-wa, libdb-tcl-devel, fedora-modular-release,
+      pkgconf, xz-lzma-compat, libpkgconf-devel, fbset, gcc, diffutils, efivar-devel,
+      syslinux-extlinux, glibc-langpack-wo, ncurses-static, fedora-modular-repos,
+      systemd-pam, gc, libcom_err, procps-ng-i18n, libcap-static, libsolv-devel, cyrus-sasl-ldap,
+      glibc-langpack-ne, cryptsetup-python3, iwl6000-firmware, npth, glibc-langpack-de,
+      kernel, glibc-langpack-nb, libpcap-devel, glibc-langpack-is, gcc-go, sssd-client,
+      sg3_utils, libsmartcols-devel, libubsan, lz4-devel, glibc-langpack-ce, glib2-tests,
+      glibc-langpack-zh, glibc-langpack-so, bsdtar, libcurl-devel, nss, libdb-cxx,
+      ghc-srpm-macros, e2fsprogs-static, cracklib, iptables, glibc-langpack-mhr, sgml-common,
+      lz4-static, glibc-langpack-bo, glibc-langpack-or, glibc-static, libfdt-devel,
+      linux-firmware, qrencode-libs, glibc-langpack-oc, glibc-langpack-hak, tzdata,
+      glibc-langpack-be, glibc-langpack-sat, rpm-build, libsemanage-devel, libcap,
+      glibc-langpack-ia, flex-doc, lua-static, glibc-langpack-am, libassuan, python3-rpm,
+      coreutils, dracut-tools, kernel-PAEdebug-modules, lz4, krb5-workstation, cyrus-sasl,
+      libpsl, fedpkg-minimal, kernel-debug-modules, kernel-debug-modules-extra, libarchive-devel,
+      iwl2000-firmware, glibc-langpack-kk, memtest86+, glibc-langpack-mt, glibc-langpack-yo,
+      glibc-langpack-sv, kernel-lpae, ncurses-compat-libs, glibc-langpack-en, python-srpm-macros,
+      ppc64-utils, glibc-common, kernel-PAEdebug, libutempter-devel, bsdcat, python2-rpm-macros,
+      libdnf, kernel-debug-core, setup, libidn, libmnl-devel, elfutils-default-yama-scope,
+      glibc-langpack-ky, glibc-langpack-ve, glibc-langpack-raj, libdb, libipt-devel,
+      dracut-config-generic, kernel-PAEdebug-core, libgomp, nss_nis, libquadmath-devel,
+      kernel-lpae-modules, python3-rpm-macros, glibc-langpack-iu, nss-util-devel,
+      glibc-langpack-as, libaio, fedora-rpm-macros, glibc-langpack-pt, glibc-langpack-ha,
+      python3-libxml2, glibc-langpack-kok, libipt, file-devel, libpwquality, kernel-bootwrapper,
+      libselinux-python3, libmount-devel, cyrus-sasl-plain, libatomic_ops-static,
+      libdb-devel-doc, glibc-langpack-nl, libverto-glib, glibc-langpack-zu, libpng-devel,
+      glibc-langpack-tr, device-mapper-libs, iproute-devel, glibc-langpack-crh, libselinux-devel,
+      ustr-debug, m4, glibc-langpack-ss, glibc-langpack-ig, glibc-langpack-cv, expat-devel,
+      lua-devel, coreutils-single, ncurses, lzo-devel, glib2-doc, glibc-langpack-sr,
+      libstdc++-devel, xml-common, glibc-langpack-mk, nss-util, systemd-libs, glibc-langpack-lb,
+      sed, gettext-devel, guile, attr, bash-doc, glibc-langpack-eu, libev-devel, ca-certificates,
+      pam, procps-ng-devel, libfdisk, systemd, glibc-langpack-shs, iptables-libs,
+      device-mapper, gdbm, glibc-langpack-th, glibc-langpack-hne, device-mapper-devel,
+      tzdata-java, rpm-build-libs, lzo-minilzo, kmod-libs, glibc-langpack-se, glibc-langpack-ber,
+      libgo-devel, nss_db, binutils, python-rpm-macros, grub2-efi-modules, ustr-static,
+      libasan-static, glibc-langpack-st, nss-pem, kernel-core, nettle, uboot-tools,
+      freetype, libtool-ltdl, glibc-langpack-hu, glibc-langpack-si, sg3_utils-libs,
+      p11-kit-server, libasan, lsvpd, cyrus-sasl-gssapi, kernel-headers, python3-setuptools,
+      nss-softokn-freebl-devel, gpgme, readline-devel, libvpd, glibc-langpack-ja,
+      ncurses-devel, libnetfilter_conntrack, gdbm-devel, qt5-srpm-macros, lz4-libs,
+      libcroco, glibc-langpack-lo, make, pcre, libobjc, kernel-modules-extra, libxml2-devel,
+      glibc-langpack-ka, popt, libutempter, python3-pip, libubsan-static, libvpd-devel,
+      gmp-c++, libdb-sql-devel, bzip2-devel, libattr-devel, glibc-langpack-ts, libtsan-static,
+      glibc-langpack-chr, glibc-langpack-mn, glibc-langpack-lg, liblsan-static, flex,
+      libpng, uboot-images-armv7, libgcrypt, libsigsegv-devel, glibc-langpack-nan,
+      iproute, procps-ng, glibc-langpack-kn, libtasn1-tools, libgcc, libacl-devel,
+      libstdc++-docs, libmetalink-devel, gnupg2, binutils-devel, cryptsetup, sqlite-doc,
+      glibc-langpack-ik, glibc-langpack-bg, gpart, libidn2, libsigsegv, glibc-langpack-bhb,
+      libsmartcols, lzo, glibc-langpack-gu, glibc-langpack-yi, python3-pwquality,
+      iwl3160-firmware, mpfr, gdb, glibc-langpack-ug, glibc-langpack-mg, libgpg-error-devel,
+      syslinux-extlinux-nonlinux, openssl-devel, libitm-devel, glibc-langpack-tl,
+      libgnat-static, glibc-langpack-aa, libseccomp-static, patch, libksba-devel,
+      lemon, bash, glibc-langpack-fur, libev-source, gawk, syslinux-devel, dwz, fuse,
+      glibc-langpack-mag, uuidd, libblkid-devel, glib2, glibc-langpack-uz, nghttp2,
+      krb5-pkinit, popt-static, cracklib-dicts, syslinux-tftpboot, gmp, bsdcpio, util-linux,
+      openssl-libs, glibc-langpack-ta, rpm-apidocs, libsepol, publicsuffix-list-dafsa,
+      libgo-static, openldap, kernel-tools-libs, rpm-plugin-syslog, unzip, krb5-devel,
+      glibc-langpack-sw, p11-kit-devel, libattr, python3-libsss_nss_idmap, libcap-ng,
+      glibc-langpack-dv, tar, libgpg-error, libsemanage-python3, libpng-tools, psl-make-dafsa,
+      gnat-srpm-macros, cracklib-devel, kmod, glibc-langpack-sq, file-libs, libsolv-demo,
+      cyrus-sasl-scram, cyrus-sasl-md5, libcrypt-nss, python3-appdirs, keyutils-libs-devel,
+      glibc-langpack-dz, libmpx-static, gpgmepp-devel, gettext-common-devel, glibc-langpack-byn,
+      kernel-PAE-modules-extra, readline, bc, audit-libs-static, glibc-langpack-cs,
+      glibc-langpack-ln, glibc-langpack-nso, glibc-langpack-ga, libidn-devel, dracut-config-rescue,
+      iproute-doc, gcc-plugin-devel, glibc-langpack-ms, psl, xz, libnfnetlink-devel,
+      iwl1000-firmware, nspr-devel, systemd-container, glibc-langpack-mr, libtasn1,
+      libblkid, glibc-langpack-an, dracut, cyrus-sasl-gs2, gettext, libpsl-devel,
+      system-python-libs, glibc-minimal-langpack, lvm2-devel, rpm-plugin-systemd-inhibit,
+      efivar-libs, iwl3945-firmware, compat-libmpc, uboot-images-qemu, libunistring-devel,
+      readline-static, dtc, glibc, coreutils-common, gcc-objc, glibc-langpack-quz,
+      glibc-langpack-ar, glibc-langpack-os, glibc-langpack-sgs, glibc-langpack-the,
+      glibc-langpack-ur, libselinux-static, glibc-langpack-li, device-mapper-event-libs,
+      redhat-rpm-config, glibc-langpack-csb, glibc-langpack-unm, xz-libs, libffi-devel,
+      libxml2-static, glibc-langpack-doi, rpm-plugin-selinux, shadow-utils, libertas-usb8388-olpc-firmware,
+      glibc-langpack-fa, glibc-langpack-fy, libsss_idmap-devel, pkgconf-pkg-config,
+      kernel-lpae-core, perl-srpm-macros, glibc-langpack-ayc, curl, emacs-filesystem,
+      ncurses-libs, glibc-langpack-brx, libstdc++-static, npth-devel, kernel-debug,
+      libmpx, libsepol-static, glibc-langpack-ht, device-mapper-persistent-data, rpm-sign,
+      openldap-devel, kernel-cross-headers, systemd-tests, libgomp-offload-nvptx,
+      iptables-services, iwl100-firmware, bzip2, glibc-langpack-hr, liblsan, glibc-langpack-ca,
+      zlib, libcap-ng-python3, glibc-langpack-lzh, nss-softokn-freebl, elfutils-libs,
+      libgnat, gcc-c++, isl-devel, kernel-PAE, glibc-langpack-hy, kernel-modules,
+      glibc-langpack-nr, glibc-langpack-tcy, sqlite, libnghttp2, cryptsetup-reencrypt,
+      glibc-langpack-rw, python3-libs, glibc-langpack-ks, libverto, gawk-doc, cyrus-sasl-devel,
+      libquadmath, qrencode, rpm-libs, e2fsprogs-libs, gdb-doc, ocaml-srpm-macros,
+      glibc-langpack-km, openssl-static, byacc, which, fpc-srpm-macros, glibc-langpack-kw,
+      libkadm5, libdb-devel, nss-pkcs11-devel, nss_hesiod, dbus-doc, glibc-langpack-et,
+      libcilkrts, libquadmath-static, glibc-langpack-mi, glibc-langpack-fr, nettle-devel,
+      elfutils-devel-static, nss-tools, systemd-udev, libssh2-docs, iwl5000-firmware,
+      minizip-devel, glibc-langpack-pl, ustr, fuse-devel, nscd, glibc-langpack-ro,
+      libidn2-devel, nss-devel, rpm-devel, glibc-langpack-pap, libseccomp-devel, nss-softokn-devel,
+      ustr-devel, keyutils, glibc-langpack-gez, glibc-langpack-eo, pyparsing-doc,
+      libdb-utils, gcc-gnat, grub2, libmnl, zlib-devel, glibc-langpack-sa, glibc-langpack-gv,
+      pcre-utf32, kernel-PAE-modules, libpeas, hfsutils-devel, glibc-langpack-sd,
+      libmount, libssh2, minizip, gcc-gdb-plugin, libdb-java, libev, sqlite-libs,
+      glibc-langpack-lt, python3-libmount, libtool-ltdl-devel, os-prober, gzip, glibc-langpack-hi,
+      libverto-glib-devel, libpcap, ruby-solv, dracut-caps, cpio, cryptsetup-libs,
+      gdb-gdbserver, glibc-langpack-bn, libertas-sd8787-firmware, p11-kit-trust, gpgmepp]
+  buildopts:
+    rpms: {macros: '%baseruntime_force_rebuild 2017-06-26
+
+        '}
+  components:
+    rpms:
+      acl: {rationale: Autogenerated by Base Runtime tools., ref: 1b70d5975cbe16d4fd4e14de4e132e5b8bc39c53}
+      attr: {rationale: Autogenerated by Base Runtime tools., ref: deabbc4e2a74e993af0be267b13c431a3ace0558}
+      audit: {rationale: Autogenerated by Base Runtime tools., ref: 123b93c75de810d79d2f8906e1ab9fb96b22b69e}
+      babeltrace: {rationale: Autogenerated by Base Runtime tools., ref: f5c9540efbc66493e8644391405f5dc0815d1ad1}
+      basesystem: {rationale: Autogenerated by Base Runtime tools., ref: e4a05b3ab23f2972f922ec38527b7c923ed4154c}
+      bash: {rationale: Autogenerated by Base Runtime tools., ref: 31a9b53e1921c6aa5f2bed0872c1cd906d3080d6}
+      bc: {rationale: Autogenerated by Base Runtime tools., ref: 2cdfa698bfc045918bbc39456a952532fc9de6ff}
+      binutils: {rationale: Autogenerated by Base Runtime tools., ref: d3157973ba5cd05eba8d17ead87acf50a7fe4610}
+      byacc: {rationale: Autogenerated by Base Runtime tools., ref: 624e59d1c7d612410ec9ef022f66da794118afcf}
+      bzip2: {rationale: Autogenerated by Base Runtime tools., ref: 3ea5d7bdb1c334d2e6efeb9ec81b8ee8ef13d984}
+      c-ares: {rationale: Autogenerated by Base Runtime tools., ref: b74febc36bd5c5496d8f384710c84c88c10c3d82}
+      ca-certificates: {rationale: Autogenerated by Base Runtime tools., ref: 9506435bd8bb4a5a09797e070a7f60332acc9752}
+      chkconfig: {rationale: Autogenerated by Base Runtime tools., ref: adc3f7d5577bf51a26355748921864a6e7277ee5}
+      coreutils: {rationale: Autogenerated by Base Runtime tools., ref: e00cb1843f7384b4682280a1a56cef58bdc8106f}
+      cpio: {rationale: Autogenerated by Base Runtime tools., ref: 6c6d3ddaea11e8635b2dec97769fb7a0d8324ae5}
+      cracklib: {rationale: Autogenerated by Base Runtime tools., ref: 2edb3e61e337926a92d56ffe84bd8cdb0f625586}
+      crypto-policies: {rationale: Autogenerated by Base Runtime tools., ref: 8c8ca98c2ef702dc75cb52a01c121bed0d2c588d}
+      cryptsetup: {rationale: Autogenerated by Base Runtime tools., ref: b64fb92578bcf24d2a2d2e6e73823e3447f367e7}
+      curl: {rationale: Autogenerated by Base Runtime tools., ref: 5ac5f7bdc933a64f7284a0e4dc03f07aad001f2b}
+      cyrus-sasl: {rationale: Autogenerated by Base Runtime tools., ref: 75a23b2fea6cff96154f180dde30b9c675b48364}
+      dbus: {rationale: Autogenerated by Base Runtime tools., ref: d750f7d4a535541eb15b4f37deb74e3e30313989}
+      device-mapper-persistent-data: {rationale: Autogenerated by Base Runtime tools.,
+        ref: 678a17f85d392b3e438bce06485e3227ee73e82d}
+      diffutils: {rationale: Autogenerated by Base Runtime tools., ref: 165207b40bc5d50fe8432236661c7e5d0f3bfd80}
+      dracut: {rationale: Needed to boot the system., ref: 04d6319f7600ca18a9a0da517052af6e56986657}
+      dtc: {rationale: Autogenerated by Base Runtime tools., ref: 05b2b5605b108427497ee77a67204ec50dcfa986}
+      dwz: {rationale: Autogenerated by Base Runtime tools., ref: 6340a7adad2fb11e81a01f8e8b2e2a4fe3e990ca}
+      e2fsprogs: {rationale: Autogenerated by Base Runtime tools., ref: 55a0c09e0e30ab1fb7306bc48f5842f08d58201d}
+      efibootmgr: {rationale: Autogenerated by Base Runtime tools., ref: 5070dfa0d2504f4299bfc5c2e5e8c390cd0d3235}
+      efivar: {rationale: Autogenerated by Base Runtime tools., ref: 9af50adeeb29e1b72dbade00cbda990a3a37454d}
+      elfutils: {rationale: Autogenerated by Base Runtime tools., ref: e67242de84610b0b4c7842b151288936f8a13b03}
+      emacs: {rationale: Autogenerated by Base Runtime tools., ref: 42fa24ab12901a5a00bd7e672a2576193adf574e}
+      expat: {rationale: Autogenerated by Base Runtime tools., ref: 9af336b7b5c64a6c66fa1d094747e1c307c73c7f}
+      extlinux-bootloader: {rationale: Autogenerated by Base Runtime tools., ref: 2e6df0d2403786d119028b5fe28fffdd5f99c3df}
+      fbset: {rationale: Autogenerated by Base Runtime tools., ref: e086d17001901320260df464954bc8aa3a4ae05e}
+      fedora-logos: {rationale: Autogenerated by Base Runtime tools., ref: 1263b8501f117be5b06f61ad12f895dab19d0c1a}
+      fedora-modular-release: {rationale: Autogenerated by Base Runtime tools., ref: db937d42cebde417a4002ed2ce8578c63f2b114c}
+      fedora-modular-repos: {rationale: Autogenerated by Base Runtime tools., ref: c1f4b61a43f5123fec07b926c23e99c8732ea951}
+      fedora-rpm-macros: {rationale: Autogenerated by Base Runtime tools., ref: d168f4a539efef42dcf48a5e9f4a178b258aba06}
+      fedpkg-minimal: {rationale: Autogenerated by Base Runtime tools., ref: 026cc9ca12187f6204cf32c552225865eb71f184}
+      file: {rationale: Autogenerated by Base Runtime tools., ref: 678277ca4c8c45887882b3172af91205ed1da6f0}
+      filesystem: {rationale: Autogenerated by Base Runtime tools., ref: ed1bc54acfa044b782ecbed596311d79db7a9c8a}
+      findutils: {rationale: Autogenerated by Base Runtime tools., ref: 339b378e9b6a084791e323389daa071f1e7f07ac}
+      flex: {rationale: Autogenerated by Base Runtime tools., ref: 26fe0dfe580bba78517ca44cb4bd755be0cde4f5}
+      fpc-srpm-macros: {rationale: Autogenerated by Base Runtime tools., ref: 3f0e8216425fcde8fb9abb7bb1eb1bafe33017f0}
+      freetype: {rationale: Autogenerated by Base Runtime tools., ref: d3647a0d5dd9e39ced0ffbe119c3078bfb86a7bf}
+      fuse: {rationale: Autogenerated by Base Runtime tools., ref: 74f133fbe7eb042fadb508a39dbc699543736b5c}
+      gawk: {rationale: Autogenerated by Base Runtime tools., ref: 63f2ac8ac41274519602f03ef1f718ae0b2c8e4d}
+      gc: {rationale: Autogenerated by Base Runtime tools., ref: ee9803b67c37b1a86b2f1f2a3389c3902e659b9f}
+      gcc: {rationale: Autogenerated by Base Runtime tools., ref: 872d384f80797c6aef5269d069f83cb0bb2edd9f}
+      gdb: {rationale: Autogenerated by Base Runtime tools., ref: 0fffd6c99de26517095a9dd81054b3713e12cfde}
+      gdbm: {rationale: Autogenerated by Base Runtime tools., ref: 587a5c1d117d991df4caac5e1b7a73198b4902a0}
+      gettext: {rationale: Autogenerated by Base Runtime tools., ref: df498733241ad35d2e7025c9b2ad5c394e6e595d}
+      ghc-srpm-macros: {rationale: Autogenerated by Base Runtime tools., ref: b57d95b6c5cbc8086653c53b0324629915204b37}
+      glib2: {rationale: Autogenerated by Base Runtime tools., ref: 15854645a451f349662f7de7d6dae2fa86c84cd2}
+      glibc: {rationale: Autogenerated by Base Runtime tools., ref: a2f7bb78767003033384a9f2030ac92cb7212d87}
+      gmp: {rationale: Autogenerated by Base Runtime tools., ref: fe04d46fce3c3596ad631710d26531aa359e375f}
+      gnat-srpm-macros: {rationale: Autogenerated by Base Runtime tools., ref: 443d027b8b0a710d1852f275555de9f3b3270016}
+      gnupg2: {rationale: Autogenerated by Base Runtime tools., ref: 9c42951fbea8754e3f666f804253c21051119e53}
+      gnutls: {rationale: Autogenerated by Base Runtime tools., ref: 2c3737eddb535d743eac6d266a861f365d9df864}
+      go-srpm-macros: {rationale: Autogenerated by Base Runtime tools., ref: 0b6060827d9dcd4cf9c05454b7e57912284b2970}
+      gobject-introspection: {rationale: Autogenerated by Base Runtime tools., ref: 55bfa0b68eaa76ee7712b34c88c0a2d4128bce7e}
+      gpart: {rationale: Autogenerated by Base Runtime tools., ref: 79d2bc74e0b725328e8c298c4b57caa45c125310}
+      gpgme: {rationale: Autogenerated by Base Runtime tools., ref: 80cb2f5e13b902e63785d307e0cffbe0d773a76c}
+      grep: {rationale: Autogenerated by Base Runtime tools., ref: c232695f408106307c43b2954c732a5a6bb352ba}
+      grub2: {rationale: Autogenerated by Base Runtime tools., ref: 819251656a468b2f06137bc98b4487af8e2af6f0}
+      grubby: {rationale: Autogenerated by Base Runtime tools., ref: c7f3e950d7d406f96794ef6933f883595af1954d}
+      guile: {rationale: Autogenerated by Base Runtime tools., ref: 2df74f173026ec917b11c940e8bb29cb2903d07e}
+      gzip: {rationale: Autogenerated by Base Runtime tools., ref: cd306eb7f9bfce3b27372269d7b092812c312e9d}
+      hfsutils: {rationale: Autogenerated by Base Runtime tools., ref: 5a2f18ddbd21481a64771fe5c05b3926625b8a1e}
+      iproute: {rationale: Autogenerated by Base Runtime tools., ref: 74656075ed5ad4ed7270b8aeb6afa2a4ef914fc7}
+      iptables: {rationale: Autogenerated by Base Runtime tools., ref: 7ee46ed2f5172db5f6e158009062ef99c3eebb48}
+      isl: {rationale: Autogenerated by Base Runtime tools., ref: 113dc22c621070f014f09ff0cd1abbe09ad99a61}
+      kernel: {rationale: Autogenerated by Base Runtime tools., ref: f2ae1bd31e1a9eccb8d80a7087aee1c19518ef74}
+      keyutils: {rationale: Autogenerated by Base Runtime tools., ref: 7162e158eb6bdd78c28b2add1c9289668cacc937}
+      kmod: {rationale: Autogenerated by Base Runtime tools., ref: 95d16ea378aefae832e728bc37a9c1a16453902a}
+      krb5: {rationale: Autogenerated by Base Runtime tools., ref: 3cae6ae5c37a3c500c074241f794716c1e6fdc90}
+      libaio: {rationale: Autogenerated by Base Runtime tools., ref: db11cf2785cee8d274c6640edf9a7078c2509012}
+      libarchive: {rationale: Autogenerated by Base Runtime tools., ref: 7446b2e86d798e2e7672a3f41a333e3182c7b1dc}
+      libassuan: {rationale: Autogenerated by Base Runtime tools., ref: 7e26da2408be409d2791b8fa0033f0443181798a}
+      libatomic_ops: {rationale: Autogenerated by Base Runtime tools., ref: 3eeefda8bed2c0c359a1ac993bc1ff2b0cc18145}
+      libcap: {rationale: Autogenerated by Base Runtime tools., ref: f17ad4c828018a730449494514a33150cf5d520b}
+      libcap-ng: {rationale: Autogenerated by Base Runtime tools., ref: a7b3901d3112e947ac2060b9fc82bc9d3a4d49f0}
+      libcroco: {rationale: Autogenerated by Base Runtime tools., ref: 75818f466e8ffa31ca95ef3b33dd63279376f24d}
+      libdb: {rationale: Autogenerated by Base Runtime tools., ref: 607172865e43570dde11c1f49de14474f47e837a}
+      libdnf: {rationale: Autogenerated by Base Runtime tools., ref: efe1828c67c1e638c7440a2315ffde33bf01c2d4}
+      libev: {rationale: Autogenerated by Base Runtime tools., ref: f7b1bcaebb7d48ff0519b1517bf83645f09ccef0}
+      libffi: {rationale: Autogenerated by Base Runtime tools., ref: 2455877bfe4cab9dd9eaf206cb5bcb44804a0a1c}
+      libgcrypt: {rationale: Autogenerated by Base Runtime tools., ref: 396c70cd7ad79ee8d8bd672f4fbc3cc4f04fb8d7}
+      libgpg-error: {rationale: Autogenerated by Base Runtime tools., ref: a7b12bf545320fd71f2f7d319ac200ee5d8ab02c}
+      libidn: {rationale: Autogenerated by Base Runtime tools., ref: 7275bd926ff5ecf7ed8eb2af5601ef6953a78352}
+      libidn2: {rationale: Autogenerated by Base Runtime tools., ref: a0ad03b679f30f30e5b196a85d700f4c17b26dd9}
+      libipt: {rationale: Autogenerated by Base Runtime tools., ref: 718f83351b0a2fe7f24f45370ca7b9f224b723f1}
+      libksba: {rationale: Autogenerated by Base Runtime tools., ref: 343c435d424b7cfded4a8c3fb94e86ca18771109}
+      libmetalink: {rationale: Autogenerated by Base Runtime tools., ref: 14d998a17d45a384c2b9391536b3294efaeb6390}
+      libmnl: {rationale: Autogenerated by Base Runtime tools., ref: 0fecaca66472a4f11fbac306aaded65a354dcfab}
+      libmpc: {rationale: Autogenerated by Base Runtime tools., ref: 54ced8ff789bdaa32de7836e82a5b0d481d36bce}
+      libnetfilter_conntrack: {rationale: Autogenerated by Base Runtime tools., ref: 0e59521eaee1763e46d0a48e0ad6e5d02fc67e59}
+      libnfnetlink: {rationale: Autogenerated by Base Runtime tools., ref: 3e3ab7c13aac49047432b6f4ceb42ef1ed48c483}
+      libpcap: {rationale: Autogenerated by Base Runtime tools., ref: 46f5217d492c46a62147c48803012d9cce92e059}
+      libpeas: {rationale: Autogenerated by Base Runtime tools., ref: f479ecc4041fb2b836b1270b9d117f3ffed12e1f}
+      libpng: {rationale: Autogenerated by Base Runtime tools., ref: 2eef5ca8cb026b1dbe4d6191749eda3d5177483a}
+      libpsl: {rationale: Autogenerated by Base Runtime tools., ref: 76ef0f56ec9d386fc981462fccc4338f987bc4d6}
+      libpwquality: {rationale: Autogenerated by Base Runtime tools., ref: 9bf5174c3324e63969c676415890a1a1c8aca5f6}
+      librepo: {rationale: Autogenerated by Base Runtime tools., ref: 372bbc1d15e4a53309229619aa763030d2ebd24d}
+      librtas: {rationale: Autogenerated by Base Runtime tools., ref: 587c426391de5ea208e77d1522e8f07705f5a211}
+      libseccomp: {rationale: Autogenerated by Base Runtime tools., ref: 857113eb64e504f9123c52ae82c815b2ceeb2fd0}
+      libselinux: {rationale: Autogenerated by Base Runtime tools., ref: ea9eee161ed07911c9c672b0e598509e39cac679}
+      libsemanage: {rationale: Autogenerated by Base Runtime tools., ref: 64efa5b6db085bcd5868189a4600ec6985e79196}
+      libsepol: {rationale: Autogenerated by Base Runtime tools., ref: 99653f4b762884baef7c64a867ffc0bb4eccb392}
+      libservicelog: {rationale: Autogenerated by Base Runtime tools., ref: ec8fd481ac4ade036094f164c59beaa0bf96893d}
+      libsigsegv: {rationale: Autogenerated by Base Runtime tools., ref: 0bca2e2c40a26940b5a1787e03d97dd11f369bb6}
+      libsolv: {rationale: Autogenerated by Base Runtime tools., ref: e6ddcf95315f088b176c6eafa58c9c969f969293}
+      libssh2: {rationale: Autogenerated by Base Runtime tools., ref: e44a6af4ac5f823db5654f18f7db7cf9f1b176d9}
+      libtasn1: {rationale: Autogenerated by Base Runtime tools., ref: 47170124b65abe7d2d3c7f9ba8fda5aa615ada92}
+      libtool: {rationale: Autogenerated by Base Runtime tools., ref: a18bf3932e524978d0e52732c749e9ad7741a04a}
+      libunistring: {rationale: Autogenerated by Base Runtime tools., ref: ee6fd5523361a7764c52116b72d184c1fb02f4ab}
+      libutempter: {rationale: Autogenerated by Base Runtime tools., ref: 0d4613714e458f3c691160032a4b1578a86b5367}
+      libverto: {rationale: Autogenerated by Base Runtime tools., ref: 521cea8b5a829197c1f6a55f605fc4b995b5184e}
+      libvpd: {rationale: Autogenerated by Base Runtime tools., ref: 7d949c746837b1d38bc6869cc0f2750542a68cbf}
+      libxml2: {rationale: Autogenerated by Base Runtime tools., ref: 5fda684ac196f90b263658654775c736a6cea3dc}
+      linux-firmware: {rationale: Autogenerated by Base Runtime tools., ref: e9184d656d8d91e1350c3d056ff6bea12acbe294}
+      lsvpd: {rationale: Autogenerated by Base Runtime tools., ref: a386ac9b2d49b759b041102f359b83cb564aaa47}
+      lua: {rationale: Autogenerated by Base Runtime tools., ref: b7447739b8d3a722a2d8e7305690b6ac3c548882}
+      lvm2: {rationale: Autogenerated by Base Runtime tools., ref: f033fa0c98533c822a4e94a337c4f398748f5956}
+      lz4: {rationale: Autogenerated by Base Runtime tools., ref: b1b71dd0916da639745125b93f3a7c1f7dde692a}
+      lzo: {rationale: Autogenerated by Base Runtime tools., ref: f507e1f182375aff98c810c2dde30770c54d1465}
+      m4: {rationale: Autogenerated by Base Runtime tools., ref: 720144b905662d90fb6fc44da11e157742dd8087}
+      mactel-boot: {rationale: Autogenerated by Base Runtime tools., ref: 129a7f0b78d99f20df2b52d72dc24b6a87e7f82e}
+      make: {rationale: Autogenerated by Base Runtime tools., ref: 966e01fab75b418a684d097b0596ee7159c80739}
+      memtest86+: {rationale: Autogenerated by Base Runtime tools., ref: dcb748b13e9e02d8c1be26274b138a6c56ce309b}
+      microdnf: {rationale: Autogenerated by Base Runtime tools., ref: 13625aae6d2d565110ab614402424544b9905de0}
+      mokutil: {rationale: Autogenerated by Base Runtime tools., ref: 802dd0c3c70005a9e7832d7274e4c0df282f8bb0}
+      mpfr: {rationale: Autogenerated by Base Runtime tools., ref: dc787f1468a5903a751bbde73d6a7b1c4af008d6}
+      mtools: {rationale: Autogenerated by Base Runtime tools., ref: 90349496f4f041ba4c1396479b921f994cac5164}
+      ncurses: {rationale: Autogenerated by Base Runtime tools., ref: 7750f0de472f697700b7e92e0a4b9cd68b85f42f}
+      nettle: {rationale: Autogenerated by Base Runtime tools., ref: c3f0481ad7c462e298c3f85fc692059275077806}
+      nghttp2: {rationale: Autogenerated by Base Runtime tools., ref: bb1e82241f49d2573f95fe44c74bde6ce6721ae4}
+      npth: {rationale: Autogenerated by Base Runtime tools., ref: 2333696ca8fe50890aa1627319aef56c72205e79}
+      nspr: {rationale: Autogenerated by Base Runtime tools., ref: b7b8b1387c1f0bd70eb17ab6d4349f55bc43dea5}
+      nss: {rationale: Autogenerated by Base Runtime tools., ref: 8a895b4021590b012f932e819932847a602c0923}
+      nss-pem: {rationale: Autogenerated by Base Runtime tools., ref: 7d778d532a8711da5a5c3473c6b9bca516269007}
+      nss-softokn: {rationale: Autogenerated by Base Runtime tools., ref: 9ac2cf8e660d0bffaf8a7ac93faa75d7bd3ca8ba}
+      nss-util: {rationale: Autogenerated by Base Runtime tools., ref: e1d76810773c1144e489f2ed464076b963a51a2f}
+      ocaml-srpm-macros: {rationale: Autogenerated by Base Runtime tools., ref: 21de03ba74f07120a082206a9bd2e77bc8863ccd}
+      openldap: {rationale: Autogenerated by Base Runtime tools., ref: af30ccf247c0814d1902d2f3ebd87b4f8f806efc}
+      openssl: {rationale: Autogenerated by Base Runtime tools., ref: c676ac32d544254b1d40d8579de8d1fb33c18305}
+      os-prober: {rationale: Autogenerated by Base Runtime tools., ref: 4f972d5e7e48396df27114d5ecc6ac319fb3d88e}
+      p11-kit: {rationale: Autogenerated by Base Runtime tools., ref: 2bd6b57929716fc8d36383f7c9a6afef1b693e03}
+      pam: {rationale: Autogenerated by Base Runtime tools., ref: d6023f89c8072fef926c992b540db7f202e00f9f}
+      patch: {rationale: Autogenerated by Base Runtime tools., ref: 4a664207f1325f1eefbb9f29f1160d85a1549827}
+      pcre: {rationale: Autogenerated by Base Runtime tools., ref: a82fb773cc7257b952cb45add94a8d9091698873}
+      perl-srpm-macros: {rationale: Autogenerated by Base Runtime tools., ref: 15a1edf29c159f252d7e3ef91c0b01c14ac47fbc}
+      pkgconf: {rationale: Autogenerated by Base Runtime tools., ref: 11de9e4874ece462059d6b1be5597c76a720f2b0}
+      popt: {rationale: Autogenerated by Base Runtime tools., ref: d9302725fdbde901827f2677d06765394ad5ad92}
+      powerpc-utils: {rationale: Autogenerated by Base Runtime tools., ref: 69110066d7dfcca05db3ef30db98bd918f3b14a2}
+      ppc64-utils: {rationale: Autogenerated by Base Runtime tools., ref: 46d3f9b89571ad915864a86ff96d48a47ec65e8c}
+      procps-ng: {rationale: Autogenerated by Base Runtime tools., ref: e54875d55a6b845a707004d29bffa11377321d15}
+      pth: {rationale: Autogenerated by Base Runtime tools., ref: 4a65b57e8c1352a94ccf369d365d4f375119ef51}
+      publicsuffix-list: {rationale: Autogenerated by Base Runtime tools., ref: 5f2e19d78452fc2adcdc7bc694e8e9b74495dd1f}
+      pyparsing: {rationale: Autogenerated by Base Runtime tools., ref: 5c83231e278a97a1cfca6bfddb36d2fffa221b8b}
+      python-appdirs: {rationale: Autogenerated by Base Runtime tools., ref: 7bb99cfef2a51c7258e6ee1d122a77cf6939347a}
+      python-packaging: {rationale: Autogenerated by Base Runtime tools., ref: 2f8a444b2cb5d4e4a578d01acffc7ae1eeef8d0b}
+      python-pip: {rationale: Autogenerated by Base Runtime tools., ref: d6fcf17a6e6686f638b77b1a485469a991ddbb57}
+      python-rpm-macros: {rationale: Autogenerated by Base Runtime tools., ref: f37b53c3973f842f60f3d423755c51d62b99390d}
+      python-setuptools: {rationale: Autogenerated by Base Runtime tools., ref: c64e6d09b77e572e28683c6d2c43584141981714}
+      python-six: {rationale: Autogenerated by Base Runtime tools., ref: d309bdfbb853cc7b2145903d1edcc86d8370981b}
+      python3: {rationale: Autogenerated by Base Runtime tools., ref: 63656420a36841328aabcc11bee3306c0a4c372e}
+      qrencode: {rationale: Autogenerated by Base Runtime tools., ref: b9d183a507f4985a4dffd5eaecab31a265d21828}
+      qt5: {rationale: Autogenerated by Base Runtime tools., ref: 92761aa95897e47b97892c2efb2f6816b33f1bf4}
+      readline: {rationale: Autogenerated by Base Runtime tools., ref: af6675659ad82a7f43af4e35f400e4bbdbae6d49}
+      redhat-rpm-config: {rationale: Autogenerated by Base Runtime tools., ref: 4914809dca206e1016d45a0c8a4b8424beb4ad80}
+      rpm: {rationale: Autogenerated by Base Runtime tools., ref: b1ad85bc8cda6dc7d36058712f593f0600d5d13f}
+      sed: {rationale: Autogenerated by Base Runtime tools., ref: 575a3ba668dd1ad996ca088e7efee9a522e94947}
+      setup: {rationale: Autogenerated by Base Runtime tools., ref: 338c72bc4e4fc6fa950f899bf4253b32de1dff60}
+      sg3_utils: {rationale: Autogenerated by Base Runtime tools., ref: 630e26d15c7b7c1c9b0ec50a764092c3551f1948}
+      sgml-common: {rationale: Autogenerated by Base Runtime tools., ref: 81d7064b0e7da6e0e5593829ed72c9ce17108b7b}
+      shadow-utils: {rationale: Autogenerated by Base Runtime tools., ref: ba9340caf5a3f86043659dd5dc83d9280cd38185}
+      shim-signed: {rationale: Autogenerated by Base Runtime tools., ref: bb890e80b23392d1ac40c5dbb3770acfa1ef5d6c}
+      sqlite: {rationale: Autogenerated by Base Runtime tools., ref: 2beb9f1c3fd168b6421b300ff04a97d1b78362d7}
+      sssd: {rationale: Latest stable. Fix test failures., ref: 90107469a76e6bb7247bfb29a40bade398dcf4bf}
+      syslinux: {rationale: Autogenerated by Base Runtime tools., ref: f793e3a0a39cf86dd5fff0448010b978583e4de2}
+      systemd: {rationale: Autogenerated by Base Runtime tools., ref: e47c648430180ca132ec753e535e1ec2c0bd3bff}
+      tar: {rationale: Autogenerated by Base Runtime tools., ref: 353f951667464c0d8174edb4a6a13ed2aa1b9b46}
+      texinfo: {rationale: Autogenerated by Base Runtime tools., ref: 31373332adea8f4c4f13683538a6e81f64af222e}
+      tzdata: {rationale: Autogenerated by Base Runtime tools., ref: 6089ddc1ae9cda8c2fbc1340cdd10a45502bf909}
+      uboot-tools: {rationale: Autogenerated by Base Runtime tools., ref: e965f7ea51ec8bc1b2b4fdbad5374835361d31ab}
+      unzip: {rationale: Autogenerated by Base Runtime tools., ref: cd6cf59f9b2b795841815ad0b9dcda743aee83e7}
+      ustr: {rationale: Autogenerated by Base Runtime tools., ref: 18c0ac45798d46e511baa373b01b718fb14afd3c}
+      util-linux: {rationale: Autogenerated by Base Runtime tools., ref: 04f1d57f74fd4738d2c462a2302031bc92a186b9}
+      which: {rationale: Autogenerated by Base Runtime tools., ref: dc514d1e2ee14fa06ec5a185a96264d01e5b8def}
+      xz: {rationale: Autogenerated by Base Runtime tools., ref: c27811574cdf7de35217ea27b8add4c0130de53e}
+      zip: {rationale: Autogenerated by Base Runtime tools., ref: 11ae231a18e54790f3f41ead4efaa56dfd9fb2f1}
+      zlib: {rationale: Autogenerated by Base Runtime tools., ref: 9f014e30021753dbf9ee115487fcfa9d3f0fbc0a}
+  dependencies:
+    buildrequires: {base-runtime: f26, bootstrap: f26, common-build-dependencies: f26,
+      perl: f26, shim: master}
+    requires: {base-runtime: f26, perl: f26}
+  description: A project closely linked to the Modularity Initiative, Base Runtime
+    is about defining the common shared package and feature set of the operating system,
+    providing both the hardware enablement layer and the minimal application runtime
+    environment other modules can build upon.
+  filter:
+    rpms: [audit, lvm2-python-libs, sssd-ipa, libverto-libevent, dracut-fips, libssh2-devel,
+      lvm2-cluster, python2-librepo, python2-gpg, perf, sssd-tools, emacs-common,
+      kernel-debug-devel, kernel-tools-libs-devel, cracklib-python, libverto-libevent-devel,
+      python2-pip, texinfo-tex, glibc-benchtests, gobject-introspection-devel, cyrus-sasl-sql,
+      libcap-ng-python, msghack, kernel-devel, libsss_autofs, sssd-common, python-libxml2,
+      python2-pyparsing, libtool, rpm-cron, krb5-server-ldap, sssd-ldap, iptables-compat,
+      python3-tools, emacs, libsss_simpleifp, util-linux-user, emacs-terminal, emacs-gettext,
+      python3-sssdconfig, freetype-demos, libverto-tevent, sqlite-analyzer, qt5-rpm-macros,
+      kernel-PAE-devel, audit-libs-python, sqlite-tcl, audispd-plugins, audispd-plugins-zos,
+      kernel-rpm-macros, gnutls-dane, librepo-devel, python2-rpm, libsemanage-python,
+      python2-six, libcroco-devel, sssd-krb5-common, libbabeltrace-devel, ntsysv,
+      python2-libipa_hbac, gnutls-devel, sssd-krb5, openldap-servers, libsss_idmap-devel,
+      python-magic, python2-sss, libsss_simpleifp-devel, sssd-nfs-idmap, audit-libs-python3,
+      python3-sss, gnutls-guile, sssd-dbus, libpeas-devel, lvm2-dbusd, libpeas-loader-python,
+      sssd-winbind-idmap, perl-solv, qgpgme-devel, python2-sssdconfig, iproute-tc,
+      kernel-tools, libpeas-loader-python3, libverto-tevent-devel, python2-libsss_nss_idmap,
+      libidn-java, python2-packaging, libsss_sudo, systemd-journal-remote, python2-solv,
+      openssl-perl, sssd-libwbclient, grub2-starfield-theme, python2-setuptools, modeline2fb,
+      emacs-nox, libselinux-ruby, python-perf, libsss_nss_idmap-devel, libipa_hbac,
+      dbus-x11, sssd-common-pac, python2-appdirs, sssd-proxy, gnutls-utils, cmirror,
+      lvm2-lockd, dracut-live, krb5-server, python3-tkinter, python2-sss-murmur, qgpgme,
+      kernel-PAEdebug-devel, cmirror-standalone, python3-test, python-pwquality, libdnf-devel,
+      python3-sss-murmur, lvm2-cluster-standalone, sssd-libwbclient-devel, sssd-ad,
+      cryptsetup-python, sssd, libidn-javadoc, python2-hawkey, python3-libipa_hbac,
+      glibc-utils, libpeas-gtk, qt5, libselinux-python, python3-debug, hfsutils-x11,
+      texinfo, pyparsing, qt5-devel, dracut-network, libipa_hbac-devel, syslinux-perl,
+      gnupg2-smime, glib2-devel, glib2-fam, glib2-static, dracut-fips-aesni, kernel-lpae-devel]
+  license:
+    module: [MIT]
+  profiles:
+    buildroot:
+      rpms: [bzip2, findutils, grep, gcc-c++, util-linux, sed, redhat-rpm-config,
+        unzip, fedora-modular-release, make, rpm-build, xz, shadow-utils, tar, gcc,
+        diffutils, which, info, coreutils, gzip, cpio, patch, bash, gawk]
+    container:
+      rpms: [glibc-minimal-langpack, filesystem, sssd-client, shadow-utils, coreutils-single,
+        libcrypt, util-linux, bash, rpm, microdnf]
+    default:
+      rpms: [cairo, libstemmer, libXxf86vm-devel, xorg-x11-xtrans-devel, python2,
+        docbook-dtds, hesiod, epydoc, harfbuzz-devel, gtk2, augeas, golang-github-russross-blackfriday,
+        compat-openssl10, lksctp-tools, checkpolicy, poppler-data, perl-Error, libXfixes,
+        ghostscript, selinux-policy, pixman, libtool, ghostscript-fonts, perl-TermReadKey,
+        gdk-pixbuf2, freetype, setools, compiler-rt, harfbuzz, libXinerama, qpdf,
+        libXp, libX11, libXcomposite, git, mesa-libGLU, clang, libXt, libcgroup, pango,
+        urw-fonts, libedit, libdrm, hwdata, libthai, graphite2, json-c, python-rhsm-certificates,
+        gperftools-libs, systemtap, satyr, libXmu, python-IPy, libXfont, cups-filters,
+        icu, libreport, polkit-pkla-compat, libglvnd, polkit, godep, tcl, time, xfsprogs,
+        libdaemon, libuv, xorg-x11-font-utils, libXi, graphite2-devel, desktop-file-utils,
+        libXft, parted, libXcursor, valgrind, libunwind, python-pymongo, libXrender,
+        policycoreutils, libXxf86vm, libdatrie, libmodman, libssh, freeglut, boost,
+        skopeo, xorg-x11-xbitmaps, hicolor-icon-theme, tcp_wrappers, llvm, libpciaccess,
+        libtar, mesa-libGLU-devel, libfontenc, libXdamage, libxslt, libICE, harfbuzz-icu,
+        libselinux, libSM, btrfs-progs, glib2, fipscheck, golang-github-cpuguy83-go-md2man,
+        libxshmfence, alsa-lib, PyYAML, libXext, xmlrpc-c, poppler, atk, cups, jasper,
+        dbus-glib, libusb, mesa, openjpeg2, chrpath, gtk3, less, libjpeg-turbo, fontconfig,
+        libXrandr, openssh, gnupg, avahi, libical, wayland, jbigkit, lcms2, bluez,
+        xorg-x11-proto-devel, golang-github-shurcooL-sanitized_anchor_name, libproxy,
+        libxcb, libusbx, mozjs17]
+    srpm-buildroot:
+      rpms: [redhat-rpm-config, fedpkg-minimal, fedora-modular-release, gnupg2, bash,
+        rpm-build, shadow-utils]
+  references: {community: 'https://fedoraproject.org/wiki/BaseRuntime', documentation: 'https://github.com/fedora-modularity/base-runtime',
+    tracker: 'https://github.com/fedora-modularity/base-runtime/issues'}
+  summary: The base application runtime and hardware abstraction layer
+document: modulemd
+version: 1
