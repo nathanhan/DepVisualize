@@ -43,19 +43,18 @@ sharedus.load("yamls/shared-userspace.yaml")
 
 def isinbigthree(packname):
 
-	if packname in bruntime.components.rpms:
+	if packname in bruntime.api.rpms:
 		return "base-runtime"
-	elif packname in commonbuilddep.components.rpms:
+	elif packname in commonbuilddep.api.rpms:
 		return "common-build-dependencies"
-	elif packname in sharedus.components.rpms:
+	elif packname in sharedus.api.rpms:
 		return "shared-userspace"
 	elif packname in ["base-runtime","shared-userspace","common-build-dependencies"]:
 		return "is-it"
 	else:
 		return ""
 
-#MASKED FOR BIG3 DEPENDENCIES
-def pastebig3(dict):
+def pastebig3(dict, toignore):
 
 	dict["base-runtime"] = []
 	dict["shared-userspace"] = []
@@ -69,11 +68,9 @@ def pastebig3(dict):
 			for index, value in enumerate(list(dict[key])):
 				if isinbigthree(value) != "": #or value not in list(dict):
 					dict[key][index] = isinbigthree(value)#""
-
-	for key in list(dict):
-		dict[key] = list(set([x for x in dict[key] if x]))
-		#if dict[key] == []:
-		#	del dict[key]
+			dict[key] = list(set([x for x in dict[key] if x]))
+			if dict[key] == [] or key in toignore:#== "fedora-release" or key == "fedora-repos":
+				del dict[key]
 		#if key not in dict.values() and key != "postgresql":
 		#	del dict[key]
 

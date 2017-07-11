@@ -23,18 +23,19 @@ dot = pydot.Dot(graph_type='digraph')
 for item in custom:
 
 	deps = nahan.chasedeps(item)
-	nahan.pastebig3(deps)
+	nahan.pastebig3(deps,["fedora-release","fedora-repos"])
 
 	for key in deps:
 		if nahan.isinbigthree(key) == "is-it":
 			dot.add_node(pydot.Node(key))
+		elif key == item:
+			dot.add_node(pydot.Node(key, shape="box"))
 		else:
 			dot.add_node(pydot.Node(key,shape="plaintext"))
-
-#draw edges
-for key in deps:
-	for value in deps[key]:
-		dot.add_edge(pydot.Edge(key,value))
+	#draw edges
+	for key in deps:
+		for value in deps[key]:
+			dot.add_edge(pydot.Edge(key,value))
 
 dot.write_svg("dot2.svg")
 
