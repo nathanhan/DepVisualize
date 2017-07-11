@@ -7,3 +7,8 @@ infra_modules_end
 custom_modules_api_start
 	postgresql
 custom_modules_api_end
+
+ignore_start
+	postgresql-libs
+ignore_end
+

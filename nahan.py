@@ -65,11 +65,14 @@ def pastebig3(dict, toignore):
 			dict[isinbigthree(key)]+=dict[key]
 			del dict[key]
 		else:
+
 			for index, value in enumerate(list(dict[key])):
-				if isinbigthree(value) != "": #or value not in list(dict):
-					dict[key][index] = isinbigthree(value)#""
+				if isinbigthree(value) != "":
+					dict[key][index] = isinbigthree(value)
+				elif value == "requested by user" or value in toignore:
+					dict[key][index] = ""
 			dict[key] = list(set([x for x in dict[key] if x]))
-			if dict[key] == [] or key in toignore:#== "fedora-release" or key == "fedora-repos":
+			if dict[key] == [] or key in toignore:
 				del dict[key]
 		#if key not in dict.values() and key != "postgresql":
 		#	del dict[key]

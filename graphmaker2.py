@@ -15,6 +15,7 @@ with open("exampleinput.txt") as inputfile:
 	content = [x for x in content if x]
 	big3 = content[content.index("infra_modules_start")+1:content.index("infra_modules_end")]
 	custom = content[content.index("custom_modules_api_start")+1:content.index("custom_modules_api_end")]
+	ignore = content[content.index("ignore_start")+1:content.index("ignore_end")]
 
 #generate dot structure
 dot = pydot.Dot(graph_type='digraph')
@@ -23,13 +24,13 @@ dot = pydot.Dot(graph_type='digraph')
 for item in custom:
 
 	deps = nahan.chasedeps(item)
-	nahan.pastebig3(deps,["fedora-release","fedora-repos"])
+	nahan.pastebig3(deps,ignore+["fedora-release","fedora-repos"])
 
 	for key in deps:
 		if nahan.isinbigthree(key) == "is-it":
-			dot.add_node(pydot.Node(key))
-		elif key == item:
 			dot.add_node(pydot.Node(key, shape="box"))
+		elif key == item:
+			dot.add_node(pydot.Node(key))
 		else:
 			dot.add_node(pydot.Node(key,shape="plaintext"))
 	#draw edges
