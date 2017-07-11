@@ -17,7 +17,7 @@ with open("exampleinput.txt") as inputfile:
 	custom = content[content.index("custom_modules_api_start")+1:content.index("custom_modules_api_end")]
 
 #generate dot structure
-dot = Digraph(comment="graph for " + ",".join(custom),format="svg")
+dot = pydot.Dot(graph_type='digraph')
 
 #establish nodes
 for item in custom:
@@ -27,13 +27,15 @@ for item in custom:
 
 	for key in deps:
 		if nahan.isinbigthree(key) == "is-it":
-			dot.node(key,key,constraint="false")
+			dot.add_node(pydot.Node(key))
 		else:
-			dot.node(key,key,shape="plaintext", constraint="false")
+			dot.add_node(pydot.Node(key,shape="plaintext"))
 
 #draw edges
 for key in deps:
 	for value in deps[key]:
-		dot.edge(key,value)
+		dot.add_edge(pydot.Edge(key,value))
 
-dot.render(view=True)
+dot.write_svg("dot2.svg")
+
+#constraint="false"

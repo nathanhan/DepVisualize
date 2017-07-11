@@ -3,7 +3,7 @@
 import modulemd
 import subprocess
 import string
-import complexdepsclean
+import nahan
 
 #open and prep modulemd file to operate on
 module = modulemd.ModuleMetadata()
@@ -14,11 +14,11 @@ module.clear_requires()
 #depchase every api module, store in dict with what it's a dependency for
 for item in module.api.rpms:
 
-	finaldependencyinfo = chasedeps(item);
+	finaldependencyinfo = nahan.chasedeps(item);
 	#check if package is in Big 3 already, if so exclude in component section
 	for key in finaldependencyinfo:
-		if isinbigthree(key) != "":
-		module.add_requires(isinbigthree(key),"f26")
+		if nahan.isinbigthree(key) != "":
+			module.add_requires(nahan.isinbigthree(key),"f26")
 		else:
 			module.components.add_rpm(key,'FIXME: Runtime dependency for ' + ','.join(finaldependencyinfo[key]))
 

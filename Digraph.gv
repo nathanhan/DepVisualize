@@ -1,0 +1,56 @@
+// graph for postgresql
+digraph {
+	postgresql [label=postgresql constraint=false shape=plaintext]
+	"postgresql-libs" [label="postgresql-libs" constraint=false shape=plaintext]
+	"glibc-common" [label="glibc-common" constraint=false shape=plaintext]
+	"krb5-libs" [label="krb5-libs" constraint=false shape=plaintext]
+	"openssl-libs" [label="openssl-libs" constraint=false shape=plaintext]
+	info [label=info constraint=false shape=plaintext]
+	"ncurses-libs" [label="ncurses-libs" constraint=false shape=plaintext]
+	"keyutils-libs" [label="keyutils-libs" constraint=false shape=plaintext]
+	libcom_err [label=libcom_err constraint=false shape=plaintext]
+	"cyrus-sasl-lib" [label="cyrus-sasl-lib" constraint=false shape=plaintext]
+	"nss-tools" [label="nss-tools" constraint=false shape=plaintext]
+	"ncurses-base" [label="ncurses-base" constraint=false shape=plaintext]
+	libacl [label=libacl constraint=false shape=plaintext]
+	"nss-sysinit" [label="nss-sysinit" constraint=false shape=plaintext]
+	"p11-kit-trust" [label="p11-kit-trust" constraint=false shape=plaintext]
+	libattr [label=libattr constraint=false shape=plaintext]
+	"nss-softokn-freebl" [label="nss-softokn-freebl" constraint=false shape=plaintext]
+	"sqlite-libs" [label="sqlite-libs" constraint=false shape=plaintext]
+	"fedora-release" [label="fedora-release" constraint=false shape=plaintext]
+	"fedora-repos" [label="fedora-repos" constraint=false shape=plaintext]
+	"coreutils-common" [label="coreutils-common" constraint=false shape=plaintext]
+	"glibc-all-langpacks" [label="glibc-all-langpacks" constraint=false shape=plaintext]
+	"libcrypt-nss" [label="libcrypt-nss" constraint=false shape=plaintext]
+	"base-runtime" [label="base-runtime" constraint=false]
+	"shared-userspace" [label="shared-userspace" constraint=false]
+	"common-build-dependencies" [label="common-build-dependencies" constraint=false]
+	postgresql -> "requested by user"
+	"postgresql-libs" -> postgresql
+	"krb5-libs" -> "postgresql-libs"
+	"openssl-libs" -> "postgresql-libs"
+	"keyutils-libs" -> "krb5-libs"
+	libcom_err -> "krb5-libs"
+	"ncurses-base" -> "ncurses-libs"
+	libattr -> libacl
+	"fedora-repos" -> "fedora-release"
+	"libcrypt-nss" -> "cyrus-sasl-lib"
+	"base-runtime" -> postgresql
+	"base-runtime" -> postgresql
+	"base-runtime" -> postgresql
+	"base-runtime" -> "postgresql-libs"
+	"base-runtime" -> "glibc-common"
+	"base-runtime" -> "glibc-common"
+	"base-runtime" -> "krb5-libs"
+	"base-runtime" -> "krb5-libs"
+	"base-runtime" -> "krb5-libs"
+	"base-runtime" -> "krb5-libs"
+	"base-runtime" -> "openssl-libs"
+	"base-runtime" -> "cyrus-sasl-lib"
+	"base-runtime" -> "p11-kit-trust"
+	"base-runtime" -> "p11-kit-trust"
+	"base-runtime" -> "p11-kit-trust"
+	"base-runtime" -> "krb5-libs"
+	"base-runtime" -> "nss-sysinit"
+}
