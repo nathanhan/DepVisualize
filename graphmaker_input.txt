@@ -2,12 +2,26 @@ infra_modules_start
 	yamls/base-runtime.yaml
 	yamls/common-build-dependencies.yaml
 	yamls/shared-userspace.yaml
-	yamls/httpd.yaml
 infra_modules_end
 
 custom_modules_api_start
-	php
-	postgresql
+	dateutils
+	gcal
+	htop
+	iotop
+	iproute
+	iputils	
+	joe
+	less
+	vim-minimal
+	emacs-nox
+	nano
+	nmap
+	nmap-ncat
+	rdiff-backup
+	screen
+	tmux
+	wireshark
 custom_modules_api_end
 
 ignore_start

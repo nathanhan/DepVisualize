@@ -65,9 +65,12 @@ def isinbigthree(packname,loadedinfra):
 
 def pastebig3(dictionary, toignore, big3):
 
+	#store the packages masekd by big3 to display in graph later
+	maskeddeps = {}
 	for key in big3:
 		if key not in dictionary:
 			dictionary[key] = []
+		maskeddeps[key] = set()
 
 	for key in list(dictionary):
 		#if key is in big3, merge deps with big3 and remove from individual consideration
@@ -79,19 +82,33 @@ def pastebig3(dictionary, toignore, big3):
 			for index, value in enumerate(list(dictionary[key])):
 				#if value is in big3, replace with big3 name
 				if isinbigthree(value,big3) != "" and isinbigthree(value,big3) != "is-it":
+					maskeddeps[isinbigthree(value,big3)].add(dictionary[key][index])
 					dictionary[key][index] = isinbigthree(value,big3)
 				#delete values matching toignore names
-				elif value == "requested by user" or value in toignore:
+				if dictionary[key][index] == "requested by user" or dictionary[key][index] in toignore:
 					dictionary[key][index] = ""
-#				if value == key:
-#					dictionary[key][index] = ""
+				#delete self references
+				if dictionary[key][index] == key:
+					dictionary[key][index] = ""
 			#delete duplicate connections and empty values
 			dictionary[key] = list(set([x for x in dictionary[key] if x]))
 			#delete keys matching toignore names and empty keys
-			if dictionary[key] == [] or key in toignore:
+			if (dictionary[key] == [] and key not in big3) or key in toignore:
 				del dictionary[key]
+	#print (maskeddeps)
+	return maskeddeps
 
-#def walkforloose(towalk, dictionary, big3):
+#def walkforloose(towalk, dictionary, big3, ezpickings):
+#	if set(dictionary[key]).isdisjoint(big3) and towalk in dictionary[key]
+
+#	for value in dictionary[towalk]:
+		
+
+#		walkforloose(value, dictionary, big3, ezpickings)
+
 
 #	for key in list(dictionary):
-#		if no value in big3
+#		if set(dictionary[key]).isdisjoint(big3) and towalk in dictionary[key]:
+#			ezpickings[key] = dictionary[key]
+#			del dictionary[key]
+#			walkforloose(key, dictionary, big3, ezpickings)
