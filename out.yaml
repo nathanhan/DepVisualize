@@ -1,0 +1,67 @@
+data:
+  api:
+    rpms: [vim-minimal, nmap, dateutils, nano, iproute, emacs-nox, tmux, iotop, screen,
+      less, gcal, iputils, rdiff-backup, htop, calc, wireshark, joe, nmap-ncat]
+  components:
+    rpms:
+      GeoIP: {rationale: 'FIXME: Runtime dependency for wireshark-cli'}
+      GeoIP-GeoLite-data: {rationale: 'FIXME: Runtime dependency for GeoIP'}
+      calc: {rationale: 'FIXME: Runtime dependency for requested by user'}
+      calc-libs: {rationale: 'FIXME: Runtime dependency for calc'}
+      dateutils: {rationale: 'FIXME: Runtime dependency for requested by user'}
+      emacs-common: {rationale: 'FIXME: Runtime dependency for emacs-nox'}
+      emacs-nox: {rationale: 'FIXME: Runtime dependency for requested by user'}
+      fedora-release: {rationale: 'FIXME: Runtime dependency for setup'}
+      fedora-repos: {rationale: 'FIXME: Runtime dependency for fedora-release'}
+      gcal: {rationale: 'FIXME: Runtime dependency for requested by user'}
+      gpm-libs: {rationale: 'FIXME: Runtime dependency for emacs-nox'}
+      htop: {rationale: 'FIXME: Runtime dependency for requested by user'}
+      iotop: {rationale: 'FIXME: Runtime dependency for requested by user'}
+      iputils: {rationale: 'FIXME: Runtime dependency for requested by user'}
+      joe: {rationale: 'FIXME: Runtime dependency for requested by user'}
+      liblockfile: {rationale: 'FIXME: Runtime dependency for emacs-common'}
+      libnl3: {rationale: 'FIXME: Runtime dependency for wireshark-cli'}
+      librsync: {rationale: 'FIXME: Runtime dependency for rdiff-backup'}
+      libsmi: {rationale: 'FIXME: Runtime dependency for wireshark-cli'}
+      nano: {rationale: 'FIXME: Runtime dependency for requested by user'}
+      nmap: {rationale: 'FIXME: Runtime dependency for requested by user'}
+      nmap-ncat: {rationale: 'FIXME: Runtime dependency for requested by user'}
+      pylibacl: {rationale: 'FIXME: Runtime dependency for rdiff-backup'}
+      python2-appdirs: {rationale: 'FIXME: Runtime dependency for python2-setuptools'}
+      python2-libs: {rationale: 'FIXME: Runtime dependency for rdiff-backup'}
+      python2-packaging: {rationale: 'FIXME: Runtime dependency for python2-setuptools'}
+      python2-pip: {rationale: 'FIXME: Runtime dependency for python2'}
+      python2-pyparsing: {rationale: 'FIXME: Runtime dependency for python2-packaging'}
+      python2-setuptools: {rationale: 'FIXME: Runtime dependency for python2'}
+      python2-six: {rationale: 'FIXME: Runtime dependency for python2-setuptools'}
+      pyxattr: {rationale: 'FIXME: Runtime dependency for rdiff-backup'}
+      rdiff-backup: {rationale: 'FIXME: Runtime dependency for requested by user'}
+      screen: {rationale: 'FIXME: Runtime dependency for requested by user'}
+      tmux: {rationale: 'FIXME: Runtime dependency for requested by user'}
+      vim-minimal: {rationale: 'FIXME: Runtime dependency for requested by user'}
+      wget: {rationale: 'FIXME: Runtime dependency for libsmi'}
+      wireshark: {rationale: 'FIXME: Runtime dependency for requested by user'}
+      wireshark-cli: {rationale: 'FIXME: Runtime dependency for wireshark'}
+  dependencies:
+    buildrequires: {base-runtime: f26, common-build-dependencies: f26, perl: f26,
+      shared-userspace: f26}
+    requires: {base-runtime: f26, shared-userspace: f26}
+  description: As the modular server is attempting to start from an extrememly small
+    baseline, many of the tools one normally expects are not provided by default.
+    However, an evaluator of the modular OS often needs these tools. At present, there
+    is nowhere to get them from, hence the need for this module.
+  filter:
+    rpms: [emacs, perl-SGMLpm, vim-X11, emacs-terminal, wireshark-gnome, pam_ssh_agent_auth,
+      wireshark-devel, nmap-frontend]
+  license:
+    content: ['??']
+    module: [MIT]
+  name: system-tools
+  profiles:
+    default:
+      rpms: [iputils, less, procps-ng, iproute]
+  references: {community: 'https://fedoraproject.org/wiki/Modularity', documentation: 'https://github.com/modularity-modules/system-tools',
+    tracker: 'https://github.com/modularity-modules/system-tools'}
+  summary: Provides the tools a general Linux user expects on the command line
+document: modulemd
+version: 1

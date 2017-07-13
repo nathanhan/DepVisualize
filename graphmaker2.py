@@ -12,7 +12,7 @@ big3, custom, ignore = nahan.readgraphmakerinput("graphmaker_input.txt")
 big3 = nahan.onetimeload(big3)
 
 #generate dot structure
-dot = pydot.Dot(graph_type='digraph')
+dot = pydot.Dot(graph_type='digraph',simplify=True)
 
 #initialize labeling
 innerlabel = {}
@@ -23,6 +23,8 @@ for item in custom:
 
 	print("handling " + item)
 	deps = nahan.chasedeps(item)
+	
+	#initialize label tracking
 	tolabel = nahan.pastebig3(deps,ignore+["fedora-release","fedora-repos"], big3)
 	for key in list(tolabel):
 		innerlabel[key]+=list(tolabel[key])
@@ -40,7 +42,7 @@ for item in custom:
 		for value in deps[key]:
 			dot.add_edge(pydot.Edge(key,value))
 
-#label box nodes with innards
+#label box nodes with innards plus highlights
 for key in big3:
 	if [x for x in innerlabel[key] if x in custom]:
 		finallabel = key + "\n" + "\n".join([x for x in innerlabel[key] if x in custom])

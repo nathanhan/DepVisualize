@@ -1,15 +1,36 @@
 #!/usr/bin/env python3
 
+import modulemd
+import subprocess
+import string
+import pydot
 import nahan
+import re
+
 
 #read in and store input
 big3, custom, ignore = nahan.readgraphmakerinput("graphmaker_input.txt")
 big3 = nahan.onetimeload(big3)
 
+#generate dot structure
+dot = pydot.Dot(graph_type='digraph',simplify=True)
+
+#initialize labeling
+innerlabel = {}
+for key in big3:
+	innerlabel[key] = []
+ 
+unifieddeps = {}
+
 for item in custom:
 
+	print("handling " + item)
 	deps = nahan.chasedeps(item)
-	nahan.pastebig3(deps,ignore+["fedora-release","fedora-repos"], big3)
+	
+	#initialize label tracking
+	tolabel = nahan.pastebig3(deps,ignore+["fedora-release","fedora-repos"], big3)
+	for key in list(tolabel):
+		innerlabel[key]+=list(tolabel[key])
 
 	#draw nodes
 	for key in deps:
@@ -23,5 +44,33 @@ for item in custom:
 	for key in deps:
 		for value in deps[key]:
 			dot.add_edge(pydot.Edge(key,value))
+
+	for key in deps:
+		if key in unifieddeps:
+			unifieddeps[key] += deps[key]
+		else:
+			unifieddeps[key] = deps[key]
+
+#draw subgraphs around logical modules
+for item in custom:
+	logicalmod = pydot.Cluster(item, fontname="Arial Bold",label = item, style="filled", color="lightgrey")
+	lookuptable = [item]
+	nahan.get_loose(lookuptable,unifieddeps,big3)
+	print(lookuptable)
+	for key in lookuptable:
+		if dot.get_node(key):
+			nodename = key
+		else:
+			nodename = '"' + key + '"'
+		print(nodename)
+		logicalmod.add_node(dot.get_node(nodename)[0])
+		dot.del_node(dot.get_node(nodename)[0])
+	dot.add_subgraph(logicalmod)
+
+#label box nodes with innards plus highlights
+for key in big3:
+	if [x for x in innerlabel[key] if x in custom]:
+		finallabel = key + "\n" + "\n".join([x for x in innerlabel[key] if x in custom])
+		dot.add_node(pydot.Node(key, shape = "box",label=finallabel,color="red"))
 
 dot.write_svg("dot.svg")

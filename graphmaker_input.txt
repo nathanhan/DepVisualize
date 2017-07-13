@@ -5,23 +5,8 @@ infra_modules_start
 infra_modules_end
 
 custom_modules_api_start
-	dateutils
-	gcal
-	htop
-	iotop
-	iproute
-	iputils	
-	joe
-	less
-	vim-minimal
-	emacs-nox
-	nano
-	nmap
-	nmap-ncat
-	rdiff-backup
-	screen
-	tmux
-	wireshark
+	php
+	postgresql
 custom_modules_api_end
 
 ignore_start

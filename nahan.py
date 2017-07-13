@@ -84,22 +84,26 @@ def pastebig3(dictionary, toignore, big3):
 				if isinbigthree(value,big3) != "" and isinbigthree(value,big3) != "is-it":
 					maskeddeps[isinbigthree(value,big3)].add(dictionary[key][index])
 					dictionary[key][index] = isinbigthree(value,big3)
-				#delete values matching toignore names
-				if dictionary[key][index] == "requested by user" or dictionary[key][index] in toignore:
-					dictionary[key][index] = ""
-				#delete self references
-				if dictionary[key][index] == key:
+				#delete values matching toignore names and self references
+				if dictionary[key][index] == key or dictionary[key][index] in toignore:
 					dictionary[key][index] = ""
 			#delete duplicate connections and empty values
 			dictionary[key] = list(set([x for x in dictionary[key] if x]))
-			#delete keys matching toignore names and empty keys
+			#delete keys matching toignore names and empty keys, remove requested by user
 			if (dictionary[key] == [] and key not in big3) or key in toignore:
 				del dictionary[key]
-	#print (maskeddeps)
+			elif "requested by user" in dictionary[key]:
+				dictionary[key] = []
+
 	return maskeddeps
 
-#def walkforloose(towalk, dictionary, big3, ezpickings):
-#	if set(dictionary[key]).isdisjoint(big3) and towalk in dictionary[key]
+def get_loose(lookuptable, dictionary, big3):
+
+	for key in dictionary:
+		if dictionary[key] and key not in lookuptable and set(dictionary[key]).issubset(lookuptable) and key not in big3:
+			lookuptable.append(key)
+			#return dictionary[key] + get_loose(key, dictionary, big3)
+	#return []
 
 #	for value in dictionary[towalk]:
 		
