@@ -7,7 +7,7 @@ import os
 
 def simplifypackname(name):
 
-	parseprocess = subprocess.run("./outputparse2.sh",input=(name+"\n").encode("utf-8"),stdout=subprocess.PIPE)
+	parseprocess = subprocess.run("./outputparse.sh",input=(name+"\n").encode("utf-8"),stdout=subprocess.PIPE)
 	return parseprocess.stdout.decode("utf-8")[:-1]
 
 #wrapper for depchase

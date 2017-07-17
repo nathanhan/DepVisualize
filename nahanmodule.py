@@ -10,8 +10,10 @@ parser.add_argument("-n","--nopropose", help="don't draw proposed modules when g
 args = parser.parse_args()
 if args.command == "graphone":
 	if args.nopropose:
-		subprocess.run(["python3", "graphmaker2.py", args.inputfile])
+		subprocess.run(["python3", "nomodulegraphmaker.py", args.inputfile])
 	else:
-		subprocess.run(["python3", "dependencygraphmaker.py", args.inputfile])
+		subprocess.run(["python3", "modulegraphmaker.py", args.inputfile])
 elif args.command == "genmodule":
 	subprocess.run(["python3", "generatemodulemd.py", args.inputfile])
+else:
+	print("Error! Unrecognized command.")
