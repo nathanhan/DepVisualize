@@ -1,0 +1,28 @@
+data:
+  api:
+    rpms: [php, postgresql, nginx]
+  components:
+    rpms:
+      apr: {rationale: 'FIXME: Runtime dependency for httpd'}
+      apr-util: {rationale: 'FIXME: Runtime dependency for httpd'}
+      fedora-release: {rationale: 'FIXME: Runtime dependency for setup'}
+      fedora-repos: {rationale: 'FIXME: Runtime dependency for fedora-release'}
+      httpd-filesystem: {rationale: 'FIXME: Runtime dependency for php'}
+      mailcap: {rationale: 'FIXME: Runtime dependency for httpd'}
+      nginx: {rationale: 'FIXME: Runtime dependency for requested by user'}
+      nginx-filesystem: {rationale: 'FIXME: Runtime dependency for nginx'}
+      nginx-mimetypes: {rationale: 'FIXME: Runtime dependency for nginx'}
+      php: {rationale: 'FIXME: Runtime dependency for requested by user'}
+      php-cli: {rationale: 'FIXME: Runtime dependency for php'}
+      php-common: {rationale: 'FIXME: Runtime dependency for php'}
+      php-json: {rationale: 'FIXME: Runtime dependency for php-common'}
+      postgresql: {rationale: 'FIXME: Runtime dependency for requested by user'}
+      postgresql-libs: {rationale: 'FIXME: Runtime dependency for postgresql'}
+  dependencies:
+    requires: {base-runtime: f26, httpd: f26, is-it: f26, shared-userspace: f26}
+  description: ''
+  license:
+    module: []
+  summary: ''
+document: modulemd
+version: 1

@@ -5,10 +5,12 @@ import subprocess
 import string
 import pydot
 import nahan
-
+import sys
 
 #read in and store input
-big3, custom, ignore = nahan.readgraphmakerinput("graphmaker_input.txt")
+if len(sys.argv) < 2:
+	print("error! sys.argv too small. need argument for path to input file")
+big3, custom, ignore = nahan.readgraphmakerinput(sys.argv[1])
 big3 = nahan.onetimeload(big3)
 
 #generate dot structure
@@ -48,4 +50,6 @@ for key in big3:
 		finallabel = key + "\n" + "\n".join([x for x in innerlabel[key] if x in custom])
 		dot.add_node(pydot.Node(key, shape = "box",label=finallabel,color="red"))
 
-dot.write_svg("dot.svg")
+outputfilename = 'graph.svg'
+dot.write_svg(outputfilename)
+print("success! output to " + outputfilename)

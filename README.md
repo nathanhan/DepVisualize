@@ -11,3 +11,4 @@ Base-runtime, shared-userspace, and common-build-dependencies modulemd files in 
 
 python3-graphviz and graphviz
 python3-pydot
+python3-argparse

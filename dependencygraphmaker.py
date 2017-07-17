@@ -6,10 +6,12 @@ import string
 import pydot
 import nahan
 import re
-
+import sys
 
 #read in and store input
-big3, custom, ignore = nahan.readgraphmakerinput("graphmaker_input.txt")
+if len(sys.argv) < 2:
+	print("error! sys.argv too small. need argument for path to input file")
+big3, custom, ignore = nahan.readgraphmakerinput(sys.argv[1])
 big3 = nahan.onetimeload(big3)
 
 #generate dot structure
@@ -52,17 +54,18 @@ for item in custom:
 			unifieddeps[key] = deps[key]
 
 #draw subgraphs around logical modules
+print("drawing logical modules...")
 for item in custom:
-	logicalmod = pydot.Cluster(item, fontname="Arial Bold",label = item, style="filled", color="lightgrey")
+	logicalmod = pydot.Cluster(item, fontname="Arial Bold",label = "proposed for " + item, style="filled", color="lightgrey")
 	lookuptable = [item]
 	nahan.get_loose(lookuptable,unifieddeps,big3)
-	print(lookuptable)
+	#print(lookuptable)
 	for key in lookuptable:
 		if dot.get_node(key):
 			nodename = key
 		else:
 			nodename = '"' + key + '"'
-		print(nodename)
+		#print(nodename)
 		logicalmod.add_node(dot.get_node(nodename)[0])
 		dot.del_node(dot.get_node(nodename)[0])
 	dot.add_subgraph(logicalmod)
@@ -73,4 +76,6 @@ for key in big3:
 		finallabel = key + "\n" + "\n".join([x for x in innerlabel[key] if x in custom])
 		dot.add_node(pydot.Node(key, shape = "box",label=finallabel,color="red"))
 
-dot.write_svg("dot.svg")
+outputfilename = 'graph.svg'
+dot.write_svg(outputfilename)
+print("success! output to " + outputfilename)

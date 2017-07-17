@@ -4,16 +4,24 @@ import modulemd
 import subprocess
 import string
 import nahan
+import sys
 
 #read in and store input
-big3, custom, ignore = nahan.readgraphmakerinput("graphmaker_input.txt")
+if len(sys.argv) < 2:
+	print("error! sys.argv too small. need argument for path to input file")
+big3, custom, ignore = nahan.readgraphmakerinput(sys.argv[1])
 big3 = nahan.onetimeload(big3)
 
 #open and prep modulemd file to operate on
 module = modulemd.ModuleMetadata()
-module.load("yamls/system-tools.yaml")
-module.components.clear_rpms()
-module.clear_requires()
+#module.load("yamls/system-tools.yaml")
+#module.components.clear_rpms()
+#module.clear_requires()
+
+module.name = "nahanmoduleresult"
+
+for item in custom:
+	module.api.add_rpm(item)
 
 #depchase every api module, store in dict with what it's a dependency for
 for item in module.api.rpms:
@@ -27,6 +35,7 @@ for item in module.api.rpms:
 		else:
 			module.components.add_rpm(key,'FIXME: Runtime dependency for ' + ','.join(finaldependencyinfo[key]))
 
-module.dump("out.yaml")
-print("results dumped to out.yaml")
+outputfilename = module.name + ".yaml"
+module.dump(outputfilename)
+print("results dumped to " + outputfilename)
 #print(len(finaldependencyinfo))
