@@ -14,12 +14,18 @@ def simplifypackname(name):
 def chasedeps(packname):
 
 	#run depchase verbose on packname package
-	test = subprocess.run(["depchase","-a", "x86_64","-c","Fedora-26-Beta-repos.cfg","-vv","resolve", packname],stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+	if type(packname) is list:
+		test = subprocess.run(["depchase","-a", "x86_64","-c","Fedora-26-Beta-repos.cfg","-vv","resolve"]+packname,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+	else:
+		test = subprocess.run(["depchase","-a", "x86_64","-c","Fedora-26-Beta-repos.cfg","-vv","resolve", packname],stdout=subprocess.PIPE,stderr=subprocess.PIPE)
 	rawresults = test.stdout
 
 	#parse verbose info stdout from depchase for depth information
 	depinfo = test.stderr.decode("utf-8").split("\n")
-	depinfo2 = depinfo[depinfo.index("DEBUG:depchase:INFO")+1:][:-1]
+	if "DEBUG:depchase:INFO" in depinfo:
+		depinfo2 = depinfo[depinfo.index("DEBUG:depchase:INFO")+1:][:-1]
+	else:
+		print("ERROR! Package name not found")
 	finaldependencyinfo = {}
 	index = 0
 	while len(depinfo2) > 2 :
@@ -33,6 +39,30 @@ def chasedeps(packname):
 	finaldependencyinfo[simplifypackname(depinfo2[0])] = list(set([simplifypackname(i) for i in [i.split(" requires")[0][2:] for i in depinfo2[1:]]]))
 	return finaldependencyinfo
 	#returns dictionary with runtime dependency packages as keys and rationale as values
+
+#wrapper for depchase involving multiple search
+#def manychasedeps(packname_list):
+#
+#	test = subprocess.run(["depchase","-a", "x86_64","-c","Fedora-26-Beta-repos.cfg","-vv","resolve"]+packname_list,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+#	rawresults = test.stdout
+#
+#	#parse verbose info stdout from depchase for depth information
+#	depinfo = test.stderr.decode("utf-8").split("\n")
+#	depinfo2 = depinfo[depinfo.index("DEBUG:depchase:INFO")+1:][:-1]
+#	finaldependencyinfo = {}
+#	index = 0
+#	while len(depinfo2) > 2 :
+#		if depinfo2[index][1] == '─' and depinfo2[index+1][1] != '─':
+#			key = depinfo2[0]
+#			finaldependencyinfo[simplifypackname(key)] = list(set([simplifypackname(i) for i in [i.split(" requires")[0][2:] for i in depinfo2[1:index+1]]]))
+#			del depinfo2[:index+1]
+#			index=0
+#		else:
+#			index+=1
+#	finaldependencyinfo[simplifypackname(depinfo2[0])] = list(set([simplifypackname(i) for i in [i.split(" requires")[0][2:] for i in depinfo2[1:]]]))
+#	return finaldependencyinfo
+#	#returns dictionary with runtime dependency packages as keys and rationale as values
+
 
 def onetimeload(inframodules):
 
@@ -93,7 +123,7 @@ def pastebig3(dictionary, toignore, big3):
 			if (dictionary[key] == [] and key not in big3) or key in toignore:
 				del dictionary[key]
 			elif "requested by user" in dictionary[key]:
-				dictionary[key] = []
+				dictionary[key] = [x for x in dictionary[key] if x!="requested by user"]
 
 	return maskeddeps
 

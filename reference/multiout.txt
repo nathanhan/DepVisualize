@@ -1,0 +1,1025 @@
+DEBUG:depchase:Load repos: 0.7574516919994494s
+DEBUG:depchase:"Fixing" deps: 0.028057484996679705s
+DEBUG:depchase:Runtime depsolve: 0.0019239340035710484s
+DEBUG:depchase:Alternatives                                                                    
+ ID INFO
+  0 util-linux-2.29.1-2.fc26.x86_64 requires coreutils
+  1 [32m+ coreutils-8.27-5.fc26.x86_64[0m
+  2   coreutils-single-8.27-5.fc26.x86_64
+  0 util-linux-2.29.1-2.fc26.x86_64 requires libcrypt.so.1(GLIBC_2.2.5)(64bit)
+  1 [32m+ libcrypt-nss-2.25-4.fc26.x86_64[0m
+  2   libcrypt-2.25-4.fc26.x86_64
+  0 setup-2.10.5-2.fc26.noarch requires system-release
+  1 [32m+ fedora-release-26-0.5.noarch[0m
+  2   generic-release-26-0.1.noarch
+  0 glibc-2.25-4.fc26.x86_64 requires glibc-langpack = 2.25-4.fc26
+  1 [32m+ glibc-all-langpacks-2.25-4.fc26.x86_64[0m
+  2   glibc-langpack-aa-2.25-4.fc26.x86_64
+  3   glibc-langpack-af-2.25-4.fc26.x86_64
+  4   glibc-langpack-ak-2.25-4.fc26.x86_64
+  5   glibc-langpack-am-2.25-4.fc26.x86_64
+  6   glibc-langpack-an-2.25-4.fc26.x86_64
+  7   glibc-langpack-anp-2.25-4.fc26.x86_64
+  8   glibc-langpack-ar-2.25-4.fc26.x86_64
+  9   glibc-langpack-as-2.25-4.fc26.x86_64
+ 10   glibc-langpack-ast-2.25-4.fc26.x86_64
+ 11   glibc-langpack-ayc-2.25-4.fc26.x86_64
+ 12   glibc-langpack-az-2.25-4.fc26.x86_64
+ 13   glibc-langpack-be-2.25-4.fc26.x86_64
+ 14   glibc-langpack-bem-2.25-4.fc26.x86_64
+ 15   glibc-langpack-ber-2.25-4.fc26.x86_64
+ 16   glibc-langpack-bg-2.25-4.fc26.x86_64
+ 17   glibc-langpack-bhb-2.25-4.fc26.x86_64
+ 18   glibc-langpack-bho-2.25-4.fc26.x86_64
+ 19   glibc-langpack-bn-2.25-4.fc26.x86_64
+ 20   glibc-langpack-bo-2.25-4.fc26.x86_64
+ 21   glibc-langpack-br-2.25-4.fc26.x86_64
+ 22   glibc-langpack-brx-2.25-4.fc26.x86_64
+ 23   glibc-langpack-bs-2.25-4.fc26.x86_64
+ 24   glibc-langpack-byn-2.25-4.fc26.x86_64
+ 25   glibc-langpack-ca-2.25-4.fc26.x86_64
+ 26   glibc-langpack-ce-2.25-4.fc26.x86_64
+ 27   glibc-langpack-chr-2.25-4.fc26.x86_64
+ 28   glibc-langpack-cmn-2.25-4.fc26.x86_64
+ 29   glibc-langpack-crh-2.25-4.fc26.x86_64
+ 30   glibc-langpack-cs-2.25-4.fc26.x86_64
+ 31   glibc-langpack-csb-2.25-4.fc26.x86_64
+ 32   glibc-langpack-cv-2.25-4.fc26.x86_64
+ 33   glibc-langpack-cy-2.25-4.fc26.x86_64
+ 34   glibc-langpack-da-2.25-4.fc26.x86_64
+ 35   glibc-langpack-de-2.25-4.fc26.x86_64
+ 36   glibc-langpack-doi-2.25-4.fc26.x86_64
+ 37   glibc-langpack-dv-2.25-4.fc26.x86_64
+ 38   glibc-langpack-dz-2.25-4.fc26.x86_64
+ 39   glibc-langpack-el-2.25-4.fc26.x86_64
+ 40   glibc-langpack-en-2.25-4.fc26.x86_64
+ 41   glibc-langpack-eo-2.25-4.fc26.x86_64
+ 42   glibc-langpack-es-2.25-4.fc26.x86_64
+ 43   glibc-langpack-et-2.25-4.fc26.x86_64
+ 44   glibc-langpack-eu-2.25-4.fc26.x86_64
+ 45   glibc-langpack-fa-2.25-4.fc26.x86_64
+ 46   glibc-langpack-ff-2.25-4.fc26.x86_64
+ 47   glibc-langpack-fi-2.25-4.fc26.x86_64
+ 48   glibc-langpack-fil-2.25-4.fc26.x86_64
+ 49   glibc-langpack-fo-2.25-4.fc26.x86_64
+ 50   glibc-langpack-fr-2.25-4.fc26.x86_64
+ 51   glibc-langpack-fur-2.25-4.fc26.x86_64
+ 52   glibc-langpack-fy-2.25-4.fc26.x86_64
+ 53   glibc-langpack-ga-2.25-4.fc26.x86_64
+ 54   glibc-langpack-gd-2.25-4.fc26.x86_64
+ 55   glibc-langpack-gez-2.25-4.fc26.x86_64
+ 56   glibc-langpack-gl-2.25-4.fc26.x86_64
+ 57   glibc-langpack-gu-2.25-4.fc26.x86_64
+ 58   glibc-langpack-gv-2.25-4.fc26.x86_64
+ 59   glibc-langpack-ha-2.25-4.fc26.x86_64
+ 60   glibc-langpack-hak-2.25-4.fc26.x86_64
+ 61   glibc-langpack-he-2.25-4.fc26.x86_64
+ 62   glibc-langpack-hi-2.25-4.fc26.x86_64
+ 63   glibc-langpack-hne-2.25-4.fc26.x86_64
+ 64   glibc-langpack-hr-2.25-4.fc26.x86_64
+ 65   glibc-langpack-hsb-2.25-4.fc26.x86_64
+ 66   glibc-langpack-ht-2.25-4.fc26.x86_64
+ 67   glibc-langpack-hu-2.25-4.fc26.x86_64
+ 68   glibc-langpack-hy-2.25-4.fc26.x86_64
+ 69   glibc-langpack-ia-2.25-4.fc26.x86_64
+ 70   glibc-langpack-id-2.25-4.fc26.x86_64
+ 71   glibc-langpack-ig-2.25-4.fc26.x86_64
+ 72   glibc-langpack-ik-2.25-4.fc26.x86_64
+ 73   glibc-langpack-is-2.25-4.fc26.x86_64
+ 74   glibc-langpack-it-2.25-4.fc26.x86_64
+ 75   glibc-langpack-iu-2.25-4.fc26.x86_64
+ 76   glibc-langpack-ja-2.25-4.fc26.x86_64
+ 77   glibc-langpack-ka-2.25-4.fc26.x86_64
+ 78   glibc-langpack-kk-2.25-4.fc26.x86_64
+ 79   glibc-langpack-kl-2.25-4.fc26.x86_64
+ 80   glibc-langpack-km-2.25-4.fc26.x86_64
+ 81   glibc-langpack-kn-2.25-4.fc26.x86_64
+ 82   glibc-langpack-ko-2.25-4.fc26.x86_64
+ 83   glibc-langpack-kok-2.25-4.fc26.x86_64
+ 84   glibc-langpack-ks-2.25-4.fc26.x86_64
+ 85   glibc-langpack-ku-2.25-4.fc26.x86_64
+ 86   glibc-langpack-kw-2.25-4.fc26.x86_64
+ 87   glibc-langpack-ky-2.25-4.fc26.x86_64
+ 88   glibc-langpack-lb-2.25-4.fc26.x86_64
+ 89   glibc-langpack-lg-2.25-4.fc26.x86_64
+ 90   glibc-langpack-li-2.25-4.fc26.x86_64
+ 91   glibc-langpack-lij-2.25-4.fc26.x86_64
+ 92   glibc-langpack-ln-2.25-4.fc26.x86_64
+ 93   glibc-langpack-lo-2.25-4.fc26.x86_64
+ 94   glibc-langpack-lt-2.25-4.fc26.x86_64
+ 95   glibc-langpack-lv-2.25-4.fc26.x86_64
+ 96   glibc-langpack-lzh-2.25-4.fc26.x86_64
+ 97   glibc-langpack-mag-2.25-4.fc26.x86_64
+ 98   glibc-langpack-mai-2.25-4.fc26.x86_64
+ 99   glibc-langpack-mg-2.25-4.fc26.x86_64
+100   glibc-langpack-mhr-2.25-4.fc26.x86_64
+101   glibc-langpack-mi-2.25-4.fc26.x86_64
+102   glibc-langpack-mk-2.25-4.fc26.x86_64
+103   glibc-langpack-ml-2.25-4.fc26.x86_64
+104   glibc-langpack-mn-2.25-4.fc26.x86_64
+105   glibc-langpack-mni-2.25-4.fc26.x86_64
+106   glibc-langpack-mr-2.25-4.fc26.x86_64
+107   glibc-langpack-ms-2.25-4.fc26.x86_64
+108   glibc-langpack-mt-2.25-4.fc26.x86_64
+109   glibc-langpack-my-2.25-4.fc26.x86_64
+110   glibc-langpack-nan-2.25-4.fc26.x86_64
+111   glibc-langpack-nb-2.25-4.fc26.x86_64
+112   glibc-langpack-nds-2.25-4.fc26.x86_64
+113   glibc-langpack-ne-2.25-4.fc26.x86_64
+114   glibc-langpack-nhn-2.25-4.fc26.x86_64
+115   glibc-langpack-niu-2.25-4.fc26.x86_64
+116   glibc-langpack-nl-2.25-4.fc26.x86_64
+117   glibc-langpack-nn-2.25-4.fc26.x86_64
+118   glibc-langpack-nr-2.25-4.fc26.x86_64
+119   glibc-langpack-nso-2.25-4.fc26.x86_64
+120   glibc-langpack-oc-2.25-4.fc26.x86_64
+121   glibc-langpack-om-2.25-4.fc26.x86_64
+122   glibc-langpack-or-2.25-4.fc26.x86_64
+123   glibc-langpack-os-2.25-4.fc26.x86_64
+124   glibc-langpack-pa-2.25-4.fc26.x86_64
+125   glibc-langpack-pap-2.25-4.fc26.x86_64
+126   glibc-langpack-pl-2.25-4.fc26.x86_64
+127   glibc-langpack-ps-2.25-4.fc26.x86_64
+128   glibc-langpack-pt-2.25-4.fc26.x86_64
+129   glibc-langpack-quz-2.25-4.fc26.x86_64
+130   glibc-langpack-raj-2.25-4.fc26.x86_64
+131   glibc-langpack-ro-2.25-4.fc26.x86_64
+132   glibc-langpack-ru-2.25-4.fc26.x86_64
+133   glibc-langpack-rw-2.25-4.fc26.x86_64
+134   glibc-langpack-sa-2.25-4.fc26.x86_64
+135   glibc-langpack-sat-2.25-4.fc26.x86_64
+136   glibc-langpack-sc-2.25-4.fc26.x86_64
+137   glibc-langpack-sd-2.25-4.fc26.x86_64
+138   glibc-langpack-se-2.25-4.fc26.x86_64
+139   glibc-langpack-sgs-2.25-4.fc26.x86_64
+140   glibc-langpack-shs-2.25-4.fc26.x86_64
+141   glibc-langpack-si-2.25-4.fc26.x86_64
+142   glibc-langpack-sid-2.25-4.fc26.x86_64
+143   glibc-langpack-sk-2.25-4.fc26.x86_64
+144   glibc-langpack-sl-2.25-4.fc26.x86_64
+145   glibc-langpack-so-2.25-4.fc26.x86_64
+146   glibc-langpack-sq-2.25-4.fc26.x86_64
+147   glibc-langpack-sr-2.25-4.fc26.x86_64
+148   glibc-langpack-ss-2.25-4.fc26.x86_64
+149   glibc-langpack-st-2.25-4.fc26.x86_64
+150   glibc-langpack-sv-2.25-4.fc26.x86_64
+151   glibc-langpack-sw-2.25-4.fc26.x86_64
+152   glibc-langpack-szl-2.25-4.fc26.x86_64
+153   glibc-langpack-ta-2.25-4.fc26.x86_64
+154   glibc-langpack-tcy-2.25-4.fc26.x86_64
+155   glibc-langpack-te-2.25-4.fc26.x86_64
+156   glibc-langpack-tg-2.25-4.fc26.x86_64
+157   glibc-langpack-th-2.25-4.fc26.x86_64
+158   glibc-langpack-the-2.25-4.fc26.x86_64
+159   glibc-langpack-ti-2.25-4.fc26.x86_64
+160   glibc-langpack-tig-2.25-4.fc26.x86_64
+161   glibc-langpack-tk-2.25-4.fc26.x86_64
+162   glibc-langpack-tl-2.25-4.fc26.x86_64
+163   glibc-langpack-tn-2.25-4.fc26.x86_64
+164   glibc-langpack-tr-2.25-4.fc26.x86_64
+165   glibc-langpack-ts-2.25-4.fc26.x86_64
+166   glibc-langpack-tt-2.25-4.fc26.x86_64
+167   glibc-langpack-ug-2.25-4.fc26.x86_64
+168   glibc-langpack-uk-2.25-4.fc26.x86_64
+169   glibc-langpack-unm-2.25-4.fc26.x86_64
+170   glibc-langpack-ur-2.25-4.fc26.x86_64
+171   glibc-langpack-uz-2.25-4.fc26.x86_64
+172   glibc-langpack-ve-2.25-4.fc26.x86_64
+173   glibc-langpack-vi-2.25-4.fc26.x86_64
+174   glibc-langpack-wa-2.25-4.fc26.x86_64
+175   glibc-langpack-wae-2.25-4.fc26.x86_64
+176   glibc-langpack-wal-2.25-4.fc26.x86_64
+177   glibc-langpack-wo-2.25-4.fc26.x86_64
+178   glibc-langpack-xh-2.25-4.fc26.x86_64
+179   glibc-langpack-yi-2.25-4.fc26.x86_64
+180   glibc-langpack-yo-2.25-4.fc26.x86_64
+181   glibc-langpack-yue-2.25-4.fc26.x86_64
+182   glibc-langpack-zh-2.25-4.fc26.x86_64
+183   glibc-langpack-zu-2.25-4.fc26.x86_64
+184   glibc-minimal-langpack-2.25-4.fc26.x86_64
+DEBUG:depchase:INFO
+varnish-5.0.0-1.fc26.x86_64
+└─requested by user
+bash-4.4.12-4.fc26.x86_64
+├─varnish-5.0.0-1.fc26.x86_64 requires /bin/sh
+└─varnish-5.0.0-1.fc26.x86_64 requires /bin/bash
+chkconfig-1.10-1.fc26.x86_64
+└─varnish-5.0.0-1.fc26.x86_64 requires /sbin/chkconfig
+glibc-2.25-4.fc26.x86_64
+├─varnish-5.0.0-1.fc26.x86_64 requires libm.so.6()(64bit)
+├─varnish-5.0.0-1.fc26.x86_64 requires libpthread.so.0()(64bit)
+├─varnish-5.0.0-1.fc26.x86_64 requires libpthread.so.0(GLIBC_2.2.5)(64bit)
+├─varnish-5.0.0-1.fc26.x86_64 requires libm.so.6(GLIBC_2.2.5)(64bit)
+├─varnish-5.0.0-1.fc26.x86_64 requires libdl.so.2()(64bit)
+├─varnish-5.0.0-1.fc26.x86_64 requires libc.so.6(GLIBC_2.15)(64bit)
+├─varnish-5.0.0-1.fc26.x86_64 requires libdl.so.2(GLIBC_2.2.5)(64bit)
+├─varnish-5.0.0-1.fc26.x86_64 requires librt.so.1()(64bit)
+├─varnish-5.0.0-1.fc26.x86_64 requires libpthread.so.0(GLIBC_2.3.2)(64bit)
+├─varnish-5.0.0-1.fc26.x86_64 requires libnsl.so.1()(64bit)
+└─varnish-5.0.0-1.fc26.x86_64 requires libpthread.so.0(GLIBC_2.12)(64bit)
+initscripts-9.70-1.fc26.x86_64
+├─varnish-5.0.0-1.fc26.x86_64 requires initscripts
+└─varnish-5.0.0-1.fc26.x86_64 requires /sbin/service
+jemalloc-4.5.0-1.fc26.x86_64
+└─varnish-5.0.0-1.fc26.x86_64 requires libjemalloc.so.2()(64bit)
+libedit-3.1-17.20160618cvs.fc26.x86_64
+└─varnish-5.0.0-1.fc26.x86_64 requires libedit.so.0()(64bit)
+logrotate-3.12.1-1.fc26.x86_64
+└─varnish-5.0.0-1.fc26.x86_64 requires logrotate
+ncurses-6.0-8.20170212.fc26.x86_64
+└─varnish-5.0.0-1.fc26.x86_64 requires ncurses
+ncurses-libs-6.0-8.20170212.fc26.x86_64
+├─varnish-5.0.0-1.fc26.x86_64 requires libtinfo.so.6()(64bit)
+├─varnish-5.0.0-1.fc26.x86_64 requires libncurses.so.6()(64bit)
+└─varnish-5.0.0-1.fc26.x86_64 requires libncursesw.so.6()(64bit)
+pcre-8.40-7.fc26.x86_64
+└─varnish-5.0.0-1.fc26.x86_64 requires libpcre.so.1()(64bit)
+redhat-rpm-config-63-1.fc26.noarch
+└─varnish-5.0.0-1.fc26.x86_64 requires redhat-rpm-config
+shadow-utils-2:4.3.1-3.fc26.x86_64
+└─varnish-5.0.0-1.fc26.x86_64 requires shadow-utils
+varnish-libs-5.0.0-1.fc26.x86_64
+├─varnish-5.0.0-1.fc26.x86_64 requires libvarnishapi.so.1()(64bit)
+├─varnish-5.0.0-1.fc26.x86_64 requires libvarnishapi.so.1(LIBVARNISHAPI_1.0)(64bit)
+├─varnish-5.0.0-1.fc26.x86_64 requires libvarnishapi.so.1(LIBVARNISHAPI_1.5)(64bit)
+├─varnish-5.0.0-1.fc26.x86_64 requires libvarnish.so()(64bit)
+├─varnish-5.0.0-1.fc26.x86_64 requires libvarnishapi.so.1(LIBVARNISHAPI_1.1)(64bit)
+├─varnish-5.0.0-1.fc26.x86_64 requires libvarnishapi.so.1(LIBVARNISHAPI_1.2)(64bit)
+├─varnish-5.0.0-1.fc26.x86_64 requires libvarnishapi.so.1(LIBVARNISHAPI_1.3)(64bit)
+├─varnish-5.0.0-1.fc26.x86_64 requires libvarnishapi.so.1(LIBVARNISHAPI_1.4)(64bit)
+├─varnish-5.0.0-1.fc26.x86_64 requires libvarnishcompat.so()(64bit)
+├─varnish-5.0.0-1.fc26.x86_64 requires libvcc.so()(64bit)
+├─varnish-5.0.0-1.fc26.x86_64 requires libvgz.so()(64bit)
+└─varnish-5.0.0-1.fc26.x86_64 requires varnish-libs(x86-64) = 5.0.0-1.fc26
+filesystem-3.2-40.fc26.x86_64
+└─bash-4.4.12-4.fc26.x86_64 requires filesystem >= 3
+libselinux-2.6-6.fc26.x86_64
+└─chkconfig-1.10-1.fc26.x86_64 requires libselinux.so.1()(64bit)
+libsepol-2.6-1.fc26.x86_64
+└─chkconfig-1.10-1.fc26.x86_64 requires libsepol.so.1()(64bit)
+popt-1.16-8.fc26.x86_64
+├─chkconfig-1.10-1.fc26.x86_64 requires libpopt.so.0()(64bit)
+└─chkconfig-1.10-1.fc26.x86_64 requires libpopt.so.0(LIBPOPT_0)(64bit)
+basesystem-11-3.fc26.noarch
+└─glibc-2.25-4.fc26.x86_64 requires basesystem
+glibc-common-2.25-4.fc26.x86_64
+└─glibc-2.25-4.fc26.x86_64 requires glibc-common = 2.25-4.fc26
+cpio-2.12-4.fc26.x86_64
+└─initscripts-9.70-1.fc26.x86_64 requires cpio
+findutils-1:4.6.0-12.fc26.x86_64
+└─initscripts-9.70-1.fc26.x86_64 requires findutils
+glib2-2.52.2-2.fc26.x86_64
+└─initscripts-9.70-1.fc26.x86_64 requires libglib-2.0.so.0()(64bit)
+grep-3.0-1.fc26.x86_64
+└─initscripts-9.70-1.fc26.x86_64 requires grep
+hostname-3.18-2.fc26.x86_64
+└─initscripts-9.70-1.fc26.x86_64 requires hostname
+ipcalc-0.1.8-2.fc26.x86_64
+└─initscripts-9.70-1.fc26.x86_64 requires ipcalc
+iproute-4.10.0-2.fc26.x86_64
+└─initscripts-9.70-1.fc26.x86_64 requires iproute
+iputils-20161105-2.fc26.x86_64
+└─initscripts-9.70-1.fc26.x86_64 requires /sbin/arping
+kmod-24-1.fc26.x86_64
+└─initscripts-9.70-1.fc26.x86_64 requires module-init-tools
+sed-4.4-1.fc26.x86_64
+└─initscripts-9.70-1.fc26.x86_64 requires sed
+perl-Getopt-Long-2.49.1-2.fc26.noarch
+└─jemalloc-4.5.0-1.fc26.x86_64 requires perl(Getopt::Long)
+libacl-2.2.52-13.fc26.x86_64
+├─logrotate-3.12.1-1.fc26.x86_64 requires libacl.so.1()(64bit)
+└─logrotate-3.12.1-1.fc26.x86_64 requires libacl.so.1(ACL_1.0)(64bit)
+ncurses-base-6.0-8.20170212.fc26.noarch
+└─ncurses-libs-6.0-8.20170212.fc26.x86_64 requires ncurses-base = 6.0-8.20170212.fc26
+dwz-0.12-3.fc26.x86_64
+└─redhat-rpm-config-63-1.fc26.noarch requires dwz >= 0.4
+fedora-rpm-macros-26-2.fc26.noarch
+└─redhat-rpm-config-63-1.fc26.noarch requires fedora-rpm-macros
+fpc-srpm-macros-1.1-2.fc26.noarch
+└─redhat-rpm-config-63-1.fc26.noarch requires fpc-srpm-macros
+ghc-srpm-macros-1.4.2-5.fc26.noarch
+└─redhat-rpm-config-63-1.fc26.noarch requires ghc-srpm-macros
+gnat-srpm-macros-4-2.fc26.noarch
+└─redhat-rpm-config-63-1.fc26.noarch requires gnat-srpm-macros
+go-srpm-macros-2-8.fc26.noarch
+└─redhat-rpm-config-63-1.fc26.noarch requires go-srpm-macros
+ocaml-srpm-macros-4-2.fc26.noarch
+└─redhat-rpm-config-63-1.fc26.noarch requires ocaml-srpm-macros
+perl-srpm-macros-1-21.fc26.noarch
+└─redhat-rpm-config-63-1.fc26.noarch requires perl-srpm-macros
+python-srpm-macros-3-20.fc26.noarch
+└─redhat-rpm-config-63-1.fc26.noarch requires python-srpm-macros
+qt5-srpm-macros-5.8.0-2.fc26.noarch
+└─redhat-rpm-config-63-1.fc26.noarch requires qt5-srpm-macros
+rpm-4.13.0.1-4.fc26.x86_64
+└─redhat-rpm-config-63-1.fc26.noarch requires rpm >= 4.11.0
+zip-3.0-18.fc26.x86_64
+└─redhat-rpm-config-63-1.fc26.noarch requires zip
+audit-libs-2.7.6-1.fc26.x86_64
+└─shadow-utils-2:4.3.1-3.fc26.x86_64 requires libaudit.so.1()(64bit)
+libattr-2.4.47-18.fc26.x86_64
+├─shadow-utils-2:4.3.1-3.fc26.x86_64 requires libattr.so.1()(64bit)
+└─shadow-utils-2:4.3.1-3.fc26.x86_64 requires libattr.so.1(ATTR_1.1)(64bit)
+libsemanage-2.6-4.fc26.x86_64
+├─shadow-utils-2:4.3.1-3.fc26.x86_64 requires libsemanage.so.1()(64bit)
+└─shadow-utils-2:4.3.1-3.fc26.x86_64 requires libsemanage.so.1(LIBSEMANAGE_1.0)(64bit)
+setup-2.10.5-2.fc26.noarch
+└─shadow-utils-2:4.3.1-3.fc26.x86_64 requires setup
+tzdata-2017b-1.fc26.noarch
+└─glibc-common-2.25-4.fc26.x86_64 requires tzdata >= 2003a
+info-6.3-3.fc26.x86_64
+└─cpio-2.12-4.fc26.x86_64 requires /sbin/install-info
+libffi-3.1-10.fc26.x86_64
+└─glib2-2.52.2-2.fc26.x86_64 requires libffi.so.6()(64bit)
+libmount-2.29.1-2.fc26.x86_64
+├─glib2-2.52.2-2.fc26.x86_64 requires libmount.so.1()(64bit)
+├─glib2-2.52.2-2.fc26.x86_64 requires libmount.so.1(MOUNT_2.19)(64bit)
+└─glib2-2.52.2-2.fc26.x86_64 requires libmount.so.1(MOUNT_2.20)(64bit)
+zlib-1.2.11-2.fc26.x86_64
+├─glib2-2.52.2-2.fc26.x86_64 requires libz.so.1()(64bit)
+└─glib2-2.52.2-2.fc26.x86_64 requires libz.so.1(ZLIB_1.2.2)(64bit)
+elfutils-libelf-0.169-1.fc26.x86_64
+├─iproute-4.10.0-2.fc26.x86_64 requires libelf.so.1()(64bit)
+└─iproute-4.10.0-2.fc26.x86_64 requires libelf.so.1(ELFUTILS_1.0)(64bit)
+libdb-5.3.28-17.fc26.x86_64
+└─iproute-4.10.0-2.fc26.x86_64 requires libdb-5.3.so()(64bit)
+libmnl-1.0.4-2.fc26.x86_64
+├─iproute-4.10.0-2.fc26.x86_64 requires libmnl.so.0()(64bit)
+└─iproute-4.10.0-2.fc26.x86_64 requires libmnl.so.0(LIBMNL_1.0)(64bit)
+libcap-2.25-5.fc26.x86_64
+└─iputils-20161105-2.fc26.x86_64 requires libcap.so.2()(64bit)
+libidn-1.33-2.fc26.x86_64
+├─iputils-20161105-2.fc26.x86_64 requires libidn.so.11()(64bit)
+└─iputils-20161105-2.fc26.x86_64 requires libidn.so.11(LIBIDN_1.0)(64bit)
+openssl-libs-1:1.1.0e-1.fc26.x86_64
+├─iputils-20161105-2.fc26.x86_64 requires libcrypto.so.1.1()(64bit)
+└─iputils-20161105-2.fc26.x86_64 requires libcrypto.so.1.1(OPENSSL_1_1_0)(64bit)
+libgcc-7.1.1-1.fc26.x86_64
+├─kmod-24-1.fc26.x86_64 requires libgcc_s.so.1()(64bit)
+├─kmod-24-1.fc26.x86_64 requires libgcc_s.so.1(GCC_3.0)(64bit)
+└─kmod-24-1.fc26.x86_64 requires libgcc_s.so.1(GCC_3.3.1)(64bit)
+xz-libs-5.2.3-2.fc26.x86_64
+├─kmod-24-1.fc26.x86_64 requires liblzma.so.5()(64bit)
+└─kmod-24-1.fc26.x86_64 requires liblzma.so.5(XZ_5.0)(64bit)
+perl-4:5.24.1-390.fc26.x86_64
+├─perl-Getopt-Long-2.49.1-2.fc26.noarch requires perl(vars)
+└─perl-Getopt-Long-2.49.1-2.fc26.noarch requires perl(overload)
+perl-Exporter-5.72-367.fc26.noarch
+└─perl-Getopt-Long-2.49.1-2.fc26.noarch requires perl(Exporter)
+perl-Pod-Usage-4:1.69-2.fc26.noarch
+└─perl-Getopt-Long-2.49.1-2.fc26.noarch requires perl(Pod::Usage) >= 1.14
+perl-Text-ParseWords-3.30-366.fc26.noarch
+└─perl-Getopt-Long-2.49.1-2.fc26.noarch requires perl(Text::ParseWords)
+perl-constant-1.33-368.fc26.noarch
+└─perl-Getopt-Long-2.49.1-2.fc26.noarch requires perl(constant)
+bzip2-libs-1.0.6-22.fc26.x86_64
+└─rpm-4.13.0.1-4.fc26.x86_64 requires libbz2.so.1()(64bit)
+curl-7.53.1-7.fc26.x86_64
+└─rpm-4.13.0.1-4.fc26.x86_64 requires curl
+libarchive-3.2.2-4.fc26.x86_64
+└─rpm-4.13.0.1-4.fc26.x86_64 requires libarchive.so.13()(64bit)
+libdb-utils-5.3.28-17.fc26.x86_64
+└─rpm-4.13.0.1-4.fc26.x86_64 requires /usr/bin/db_stat
+lua-libs-5.3.4-1.fc26.x86_64
+└─rpm-4.13.0.1-4.fc26.x86_64 requires liblua-5.3.so()(64bit)
+nss-3.30.2-1.0.fc26.x86_64
+└─rpm-4.13.0.1-4.fc26.x86_64 requires libnss3.so()(64bit)
+rpm-libs-4.13.0.1-4.fc26.x86_64
+├─rpm-4.13.0.1-4.fc26.x86_64 requires librpm.so.7()(64bit)
+└─rpm-4.13.0.1-4.fc26.x86_64 requires librpmio.so.7()(64bit)
+libcap-ng-0.7.8-3.fc26.x86_64
+└─audit-libs-2.7.6-1.fc26.x86_64 requires libcap-ng.so.0()(64bit)
+ustr-1.0.4-22.fc26.x86_64
+├─libsemanage-2.6-4.fc26.x86_64 requires libustr-1.0.so.1()(64bit)
+├─libsemanage-2.6-4.fc26.x86_64 requires libustr-1.0.so.1(USTR_1.0)(64bit)
+└─libsemanage-2.6-4.fc26.x86_64 requires libustr-1.0.so.1(USTR_1.0.1)(64bit)
+libblkid-2.29.1-2.fc26.x86_64
+├─libmount-2.29.1-2.fc26.x86_64 requires libblkid.so.1()(64bit)
+├─libmount-2.29.1-2.fc26.x86_64 requires libblkid.so.1(BLKID_1.0)(64bit)
+├─libmount-2.29.1-2.fc26.x86_64 requires libblkid.so.1(BLKID_2.15)(64bit)
+└─libmount-2.29.1-2.fc26.x86_64 requires libblkid.so.1(BLKID_2.17)(64bit)
+libuuid-2.29.1-2.fc26.x86_64
+└─libmount-2.29.1-2.fc26.x86_64 requires libuuid.so.1()(64bit)
+emacs-filesystem-1:25.2-2.fc26.noarch
+└─libidn-1.33-2.fc26.x86_64 requires emacs-filesystem >= 25.1
+ca-certificates-2017.2.14-1.0.fc26.noarch
+└─openssl-libs-1:1.1.0e-1.fc26.x86_64 requires ca-certificates >= 2008-5
+crypto-policies-20170330-3.git55b66da.fc26.noarch
+└─openssl-libs-1:1.1.0e-1.fc26.x86_64 requires crypto-policies
+gdbm-1.13-1.fc26.x86_64
+├─perl-4:5.24.1-390.fc26.x86_64 requires libgdbm.so.4()(64bit)
+└─perl-4:5.24.1-390.fc26.x86_64 requires libgdbm_compat.so.4()(64bit)
+perl-Carp-1.40-366.fc26.noarch
+└─perl-4:5.24.1-390.fc26.x86_64 requires perl(Carp)
+perl-File-Path-2.12-366.fc26.noarch
+└─perl-4:5.24.1-390.fc26.x86_64 requires perl(File::Path)
+perl-IO-1.36-390.fc26.x86_64
+└─perl-4:5.24.1-390.fc26.x86_64 requires perl(IO::File)
+perl-PathTools-3.63-367.fc26.x86_64
+├─perl-4:5.24.1-390.fc26.x86_64 requires perl(File::Spec)
+├─perl-4:5.24.1-390.fc26.x86_64 requires perl(Cwd)
+└─perl-4:5.24.1-390.fc26.x86_64 requires perl(File::Spec::Functions)
+perl-Scalar-List-Utils-3:1.47-2.fc26.x86_64
+└─perl-4:5.24.1-390.fc26.x86_64 requires perl(Scalar::Util) >= 1.10
+perl-Text-Tabs+Wrap-2013.0523-366.fc26.noarch
+├─perl-4:5.24.1-390.fc26.x86_64 requires perl(Text::Wrap)
+└─perl-4:5.24.1-390.fc26.x86_64 requires perl(Text::Tabs)
+perl-Unicode-Normalize-1.25-366.fc26.x86_64
+└─perl-4:5.24.1-390.fc26.x86_64 requires perl(Unicode::Normalize)
+perl-libs-4:5.24.1-390.fc26.x86_64
+├─perl-4:5.24.1-390.fc26.x86_64 requires perl-libs(x86-64) = 4:5.24.1-390.fc26
+└─perl-4:5.24.1-390.fc26.x86_64 requires libperl.so.5.24()(64bit)
+perl-macros-4:5.24.1-390.fc26.x86_64
+└─perl-4:5.24.1-390.fc26.x86_64 requires perl-macros
+perl-parent-1:0.236-2.fc26.noarch
+└─perl-4:5.24.1-390.fc26.x86_64 requires perl(parent)
+perl-threads-1:2.15-1.fc26.x86_64
+└─perl-4:5.24.1-390.fc26.x86_64 requires perl(threads)
+perl-threads-shared-1.55-2.fc26.x86_64
+└─perl-4:5.24.1-390.fc26.x86_64 requires perl(threads::shared)
+perl-Pod-Perldoc-3.28-1.fc26.noarch
+└─perl-Pod-Usage-4:1.69-2.fc26.noarch requires perl-Pod-Perldoc
+perl-podlators-4.09-2.fc26.noarch
+└─perl-Pod-Usage-4:1.69-2.fc26.noarch requires perl(Pod::Text) >= 4
+libcurl-7.53.1-7.fc26.x86_64
+├─curl-7.53.1-7.fc26.x86_64 requires libcurl(x86-64) = 7.53.1-7.fc26
+└─curl-7.53.1-7.fc26.x86_64 requires libcurl.so.4()(64bit)
+libmetalink-0.1.3-2.fc26.x86_64
+└─curl-7.53.1-7.fc26.x86_64 requires libmetalink.so.3()(64bit)
+nspr-4.14.0-2.fc26.x86_64
+├─curl-7.53.1-7.fc26.x86_64 requires libnspr4.so()(64bit)
+├─curl-7.53.1-7.fc26.x86_64 requires libplc4.so()(64bit)
+└─curl-7.53.1-7.fc26.x86_64 requires libplds4.so()(64bit)
+nss-util-3.30.2-1.0.fc26.x86_64
+└─curl-7.53.1-7.fc26.x86_64 requires libnssutil3.so()(64bit)
+libxml2-2.9.4-2.fc26.x86_64
+├─libarchive-3.2.2-4.fc26.x86_64 requires libxml2.so.2()(64bit)
+├─libarchive-3.2.2-4.fc26.x86_64 requires libxml2.so.2(LIBXML2_2.4.30)(64bit)
+├─libarchive-3.2.2-4.fc26.x86_64 requires libxml2.so.2(LIBXML2_2.6.0)(64bit)
+├─libarchive-3.2.2-4.fc26.x86_64 requires libxml2.so.2(LIBXML2_2.5.0)(64bit)
+├─libarchive-3.2.2-4.fc26.x86_64 requires libxml2.so.2(LIBXML2_2.5.2)(64bit)
+└─libarchive-3.2.2-4.fc26.x86_64 requires libxml2.so.2(LIBXML2_2.6.5)(64bit)
+lz4-libs-1.7.5-3.fc26.x86_64
+└─libarchive-3.2.2-4.fc26.x86_64 requires liblz4.so.1()(64bit)
+lzo-2.08-9.fc26.x86_64
+└─libarchive-3.2.2-4.fc26.x86_64 requires liblzo2.so.2()(64bit)
+nss-softokn-3.30.2-1.0.fc26.x86_64
+└─nss-3.30.2-1.0.fc26.x86_64 requires nss-softokn(x86-64) >= 3.30.2
+nss-sysinit-3.30.2-1.0.fc26.x86_64
+└─nss-3.30.2-1.0.fc26.x86_64 requires nss-system-init
+rpm-plugin-selinux-4.13.0.1-4.fc26.x86_64
+└─rpm-libs-4.13.0.1-4.fc26.x86_64 requires rpm-plugin-selinux(x86-64) = 4.13.0.1-4.fc26
+p11-kit-trust-0.23.5-1.fc26.x86_64
+└─ca-certificates-2017.2.14-1.0.fc26.noarch requires p11-kit-trust >= 0.23.4
+readline-7.0-5.fc26.x86_64
+└─gdbm-1.13-1.fc26.x86_64 requires libreadline.so.7()(64bit)
+perl-Errno-1.25-390.fc26.x86_64
+└─perl-IO-1.36-390.fc26.x86_64 requires perl(Errno)
+perl-Socket-4:2.024-2.fc26.x86_64
+└─perl-IO-1.36-390.fc26.x86_64 requires perl(Socket) >= 1.3
+groff-base-1.22.3-9.fc26.x86_64
+└─perl-Pod-Perldoc-3.28-1.fc26.noarch requires groff-base
+perl-File-Temp-0.230.400-2.fc26.noarch
+└─perl-Pod-Perldoc-3.28-1.fc26.noarch requires perl(File::Temp) >= 0.22
+perl-HTTP-Tiny-0.070-2.fc26.noarch
+└─perl-Pod-Perldoc-3.28-1.fc26.noarch requires perl(HTTP::Tiny)
+perl-Pod-Simple-1:3.35-2.fc26.noarch
+├─perl-Pod-Perldoc-3.28-1.fc26.noarch requires perl(Pod::Simple::RTF) >= 3.16
+├─perl-Pod-Perldoc-3.28-1.fc26.noarch requires perl(Pod::Simple::XMLOutStream) >= 3.16
+└─perl-Pod-Perldoc-3.28-1.fc26.noarch requires perl(Pod::Simple::Checker)
+perl-Term-ANSIColor-4.06-2.fc26.noarch
+└─perl-podlators-4.09-2.fc26.noarch requires perl(Term::ANSIColor)
+perl-Term-Cap-1.17-366.fc26.noarch
+└─perl-podlators-4.09-2.fc26.noarch requires perl(Term::Cap)
+krb5-libs-1.15.1-8.fc26.x86_64
+├─libcurl-7.53.1-7.fc26.x86_64 requires libkrb5.so.3()(64bit)
+├─libcurl-7.53.1-7.fc26.x86_64 requires libk5crypto.so.3()(64bit)
+├─libcurl-7.53.1-7.fc26.x86_64 requires libgssapi_krb5.so.2()(64bit)
+└─libcurl-7.53.1-7.fc26.x86_64 requires libgssapi_krb5.so.2(gssapi_krb5_2_MIT)(64bit)
+libcom_err-1.43.4-2.fc26.x86_64
+└─libcurl-7.53.1-7.fc26.x86_64 requires libcom_err.so.2()(64bit)
+libidn2-2.0.2-1.fc26.x86_64
+├─libcurl-7.53.1-7.fc26.x86_64 requires libidn2.so.0()(64bit)
+└─libcurl-7.53.1-7.fc26.x86_64 requires libidn2.so.0(IDN2_0.0.0)(64bit)
+libnghttp2-1.21.1-1.fc26.x86_64
+└─libcurl-7.53.1-7.fc26.x86_64 requires libnghttp2.so.14()(64bit)
+libpsl-0.17.0-2.fc26.x86_64
+└─libcurl-7.53.1-7.fc26.x86_64 requires libpsl.so.5()(64bit)
+libssh2-1.8.0-2.fc26.x86_64
+├─libcurl-7.53.1-7.fc26.x86_64 requires libssh2(x86-64) >= 1.8.0
+└─libcurl-7.53.1-7.fc26.x86_64 requires libssh2.so.1()(64bit)
+nss-pem-1.0.3-3.fc26.x86_64
+└─libcurl-7.53.1-7.fc26.x86_64 requires nss-pem(x86-64)
+openldap-2.4.44-10.fc26.x86_64
+├─libcurl-7.53.1-7.fc26.x86_64 requires liblber-2.4.so.2()(64bit)
+└─libcurl-7.53.1-7.fc26.x86_64 requires libldap-2.4.so.2()(64bit)
+expat-2.2.0-2.fc26.x86_64
+└─libmetalink-0.1.3-2.fc26.x86_64 requires libexpat.so.1()(64bit)
+nss-softokn-freebl-3.30.2-1.0.fc26.x86_64
+└─nss-softokn-3.30.2-1.0.fc26.x86_64 requires nss-softokn-freebl(x86-64) >= 3.30.2-1.0.fc26
+sqlite-libs-3.18.0-1.fc26.x86_64
+└─nss-softokn-3.30.2-1.0.fc26.x86_64 requires libsqlite3.so.0()(64bit)
+libtasn1-4.10-2.fc26.x86_64
+├─p11-kit-trust-0.23.5-1.fc26.x86_64 requires libtasn1.so.6()(64bit)
+└─p11-kit-trust-0.23.5-1.fc26.x86_64 requires libtasn1.so.6(LIBTASN1_0_3)(64bit)
+p11-kit-0.23.5-1.fc26.x86_64
+├─p11-kit-trust-0.23.5-1.fc26.x86_64 requires p11-kit(x86-64) = 0.23.5-1.fc26
+└─p11-kit-trust-0.23.5-1.fc26.x86_64 requires libp11-kit.so.0()(64bit)
+libstdc++-7.1.1-1.fc26.x86_64
+├─groff-base-1.22.3-9.fc26.x86_64 requires libstdc++.so.6()(64bit)
+├─groff-base-1.22.3-9.fc26.x86_64 requires libstdc++.so.6(CXXABI_1.3)(64bit)
+├─groff-base-1.22.3-9.fc26.x86_64 requires libstdc++.so.6(GLIBCXX_3.4)(64bit)
+├─groff-base-1.22.3-9.fc26.x86_64 requires libstdc++.so.6(CXXABI_1.3.9)(64bit)
+└─groff-base-1.22.3-9.fc26.x86_64 requires libstdc++.so.6(CXXABI_1.3.8)(64bit)
+perl-MIME-Base64-3.15-366.fc26.x86_64
+└─perl-HTTP-Tiny-0.070-2.fc26.noarch requires perl(MIME::Base64)
+perl-Time-Local-1:1.250-2.fc26.noarch
+└─perl-HTTP-Tiny-0.070-2.fc26.noarch requires perl(Time::Local)
+perl-Pod-Escapes-1:1.07-366.fc26.noarch
+└─perl-Pod-Simple-1:3.35-2.fc26.noarch requires perl(Pod::Escapes) >= 1.04
+keyutils-libs-1.5.10-1.fc26.x86_64
+├─krb5-libs-1.15.1-8.fc26.x86_64 requires libkeyutils.so.1()(64bit)
+├─krb5-libs-1.15.1-8.fc26.x86_64 requires libkeyutils.so.1(KEYUTILS_0.3)(64bit)
+├─krb5-libs-1.15.1-8.fc26.x86_64 requires libkeyutils.so.1(KEYUTILS_1.0)(64bit)
+└─krb5-libs-1.15.1-8.fc26.x86_64 requires libkeyutils.so.1(KEYUTILS_1.5)(64bit)
+libverto-0.2.6-7.fc26.x86_64
+└─krb5-libs-1.15.1-8.fc26.x86_64 requires libverto.so.1()(64bit)
+libunistring-0.9.7-1.fc26.x86_64
+└─libidn2-2.0.2-1.fc26.x86_64 requires libunistring.so.2()(64bit)
+publicsuffix-list-dafsa-20170424-1.fc26.noarch
+└─libpsl-0.17.0-2.fc26.x86_64 requires publicsuffix-list-dafsa
+cyrus-sasl-lib-2.1.26-32.fc26.x86_64
+└─openldap-2.4.44-10.fc26.x86_64 requires libsasl2.so.3()(64bit)
+nss-tools-3.30.2-1.0.fc26.x86_64
+└─openldap-2.4.44-10.fc26.x86_64 requires nss-tools
+unzip-6.0-33.fc26.x86_64
+└─zip-3.0-18.fc26.x86_64 requires unzip
+gcc-7.1.1-1.fc26.x86_64
+└─varnish-5.0.0-1.fc26.x86_64 requires gcc
+binutils-2.27-21.fc26.x86_64
+└─gcc-7.1.1-1.fc26.x86_64 requires binutils >= 2.24
+cpp-7.1.1-1.fc26.x86_64
+└─gcc-7.1.1-1.fc26.x86_64 requires cpp = 7.1.1-1.fc26
+gmp-1:6.1.2-4.fc26.x86_64
+└─gcc-7.1.1-1.fc26.x86_64 requires libgmp.so.10()(64bit)
+isl-0.16.1-1.fc26.x86_64
+└─gcc-7.1.1-1.fc26.x86_64 requires libisl.so.15()(64bit)
+libgomp-7.1.1-1.fc26.x86_64
+└─gcc-7.1.1-1.fc26.x86_64 requires libgomp.so.1()(64bit)
+libmpc-1.0.2-6.fc26.x86_64
+└─gcc-7.1.1-1.fc26.x86_64 requires libmpc.so.3()(64bit)
+mpfr-3.1.5-3.fc26.x86_64
+└─gcc-7.1.1-1.fc26.x86_64 requires libmpfr.so.4()(64bit)
+systemd-233-4.fc27.x86_64
+├─varnish-5.0.0-1.fc26.x86_64 requires systemd-units
+└─varnish-5.0.0-1.fc26.x86_64 requires systemd-sysv
+acl-2.2.52-13.fc26.x86_64
+└─systemd-233-4.fc27.x86_64 requires acl
+cryptsetup-libs-1.7.5-1.fc26.x86_64
+├─systemd-233-4.fc27.x86_64 requires libcryptsetup.so.4()(64bit)
+└─systemd-233-4.fc27.x86_64 requires libcryptsetup.so.4(CRYPTSETUP_1.0)(64bit)
+elfutils-libs-0.169-1.fc26.x86_64
+├─systemd-233-4.fc27.x86_64 requires libdw.so.1()(64bit)
+├─systemd-233-4.fc27.x86_64 requires libdw.so.1(ELFUTILS_0.122)(64bit)
+├─systemd-233-4.fc27.x86_64 requires libdw.so.1(ELFUTILS_0.130)(64bit)
+└─systemd-233-4.fc27.x86_64 requires libdw.so.1(ELFUTILS_0.158)(64bit)
+iptables-libs-1.6.1-2.fc26.x86_64
+└─systemd-233-4.fc27.x86_64 requires libip4tc.so.0()(64bit)
+kmod-libs-24-1.fc26.x86_64
+├─systemd-233-4.fc27.x86_64 requires libkmod.so.2()(64bit)
+└─systemd-233-4.fc27.x86_64 requires libkmod.so.2(LIBKMOD_5)(64bit)
+libgcrypt-1.7.6-2.fc26.x86_64
+├─systemd-233-4.fc27.x86_64 requires libgcrypt.so.20()(64bit)
+└─systemd-233-4.fc27.x86_64 requires libgcrypt.so.20(GCRYPT_1.6)(64bit)
+libgpg-error-1.25-2.fc26.x86_64
+├─systemd-233-4.fc27.x86_64 requires libgpg-error.so.0()(64bit)
+└─systemd-233-4.fc27.x86_64 requires libgpg-error.so.0(GPG_ERROR_1.0)(64bit)
+libseccomp-2.3.2-1.fc26.x86_64
+└─systemd-233-4.fc27.x86_64 requires libseccomp.so.2()(64bit)
+pam-1.3.0-2.fc26.x86_64
+├─systemd-233-4.fc27.x86_64 requires libpam.so.0()(64bit)
+└─systemd-233-4.fc27.x86_64 requires libpam.so.0(LIBPAM_1.0)(64bit)
+qrencode-libs-3.4.2-7.fc26.x86_64
+└─systemd-233-4.fc27.x86_64 requires libqrencode.so.3()(64bit)
+systemd-libs-233-4.fc27.x86_64
+└─systemd-233-4.fc27.x86_64 requires systemd-libs = 233-4.fc27
+systemd-pam-233-4.fc27.x86_64
+└─systemd-233-4.fc27.x86_64 requires systemd-pam = 233-4.fc27
+device-mapper-libs-1.02.137-6.fc26.x86_64
+├─cryptsetup-libs-1.7.5-1.fc26.x86_64 requires libdevmapper.so.1.02()(64bit)
+├─cryptsetup-libs-1.7.5-1.fc26.x86_64 requires libdevmapper.so.1.02(Base)(64bit)
+└─cryptsetup-libs-1.7.5-1.fc26.x86_64 requires libdevmapper.so.1.02(DM_1_02_97)(64bit)
+elfutils-default-yama-scope-0.169-1.fc26.noarch
+└─elfutils-libs-0.169-1.fc26.x86_64 requires default-yama-scope
+libpcap-14:1.8.1-3.fc26.x86_64
+└─iptables-libs-1.6.1-2.fc26.x86_64 requires libpcap.so.1()(64bit)
+cracklib-2.9.6-5.fc26.x86_64
+└─pam-1.3.0-2.fc26.x86_64 requires libcrack.so.2()(64bit)
+device-mapper-1.02.137-6.fc26.x86_64
+└─device-mapper-libs-1.02.137-6.fc26.x86_64 requires device-mapper = 1.02.137-6.fc26
+gzip-1.8-2.fc26.x86_64
+└─cracklib-2.9.6-5.fc26.x86_64 requires gzip
+util-linux-2.29.1-2.fc26.x86_64
+└─systemd-233-4.fc27.x86_64 requires util-linux
+procps-ng-3.3.10-13.fc26.x86_64
+└─initscripts-9.70-1.fc26.x86_64 requires procps-ng >= 3.3.8-16
+dbus-1:1.11.12-1.fc26.x86_64
+└─systemd-233-4.fc27.x86_64 requires dbus >= 1.9.18
+libfdisk-2.29.1-2.fc26.x86_64
+├─util-linux-2.29.1-2.fc26.x86_64 requires libfdisk.so.1()(64bit)
+├─util-linux-2.29.1-2.fc26.x86_64 requires libfdisk.so.1(FDISK_2.26)(64bit)
+├─util-linux-2.29.1-2.fc26.x86_64 requires libfdisk.so.1(FDISK_2.27)(64bit)
+├─util-linux-2.29.1-2.fc26.x86_64 requires libfdisk.so.1(FDISK_2.28)(64bit)
+└─util-linux-2.29.1-2.fc26.x86_64 requires libfdisk.so.1(FDISK_2.29)(64bit)
+libsmartcols-2.29.1-2.fc26.x86_64
+├─util-linux-2.29.1-2.fc26.x86_64 requires libsmartcols.so.1()(64bit)
+├─util-linux-2.29.1-2.fc26.x86_64 requires libsmartcols.so.1(SMARTCOLS_2.25)(64bit)
+├─util-linux-2.29.1-2.fc26.x86_64 requires libsmartcols.so.1(SMARTCOLS_2.27)(64bit)
+└─util-linux-2.29.1-2.fc26.x86_64 requires libsmartcols.so.1(SMARTCOLS_2.28)(64bit)
+libutempter-1.1.6-9.fc26.x86_64
+├─util-linux-2.29.1-2.fc26.x86_64 requires libutempter.so.0()(64bit)
+└─util-linux-2.29.1-2.fc26.x86_64 requires libutempter.so.0(UTEMPTER_1.1)(64bit)
+dbus-libs-1:1.11.12-1.fc26.x86_64
+├─dbus-1:1.11.12-1.fc26.x86_64 requires libdbus-1.so.3()(64bit)
+├─dbus-1:1.11.12-1.fc26.x86_64 requires libdbus-1.so.3(LIBDBUS_1_3)(64bit)
+├─dbus-1:1.11.12-1.fc26.x86_64 requires libdbus-1.so.3(LIBDBUS_PRIVATE_1.11.12)(64bit)
+└─dbus-1:1.11.12-1.fc26.x86_64 requires dbus-libs(x86-64) = 1:1.11.12-1.fc26
+perl-Encode-4:2.88-6.fc26.x86_64
+└─perl-podlators-4.09-2.fc26.noarch requires perl(Encode)
+libpwquality-1.3.0-8.fc26.x86_64
+└─pam-1.3.0-2.fc26.x86_64 requires libpwquality >= 0.9.9
+gawk-4.1.4-3.fc26.x86_64
+└─krb5-libs-1.15.1-8.fc26.x86_64 requires gawk
+libsigsegv-2.11-1.fc26.x86_64
+└─gawk-4.1.4-3.fc26.x86_64 requires libsigsegv.so.2()(64bit)
+pkgconf-pkg-config-1.3.6-1.fc26.x86_64
+└─jemalloc-4.5.0-1.fc26.x86_64 requires /usr/bin/pkg-config
+pkgconf-1.3.6-1.fc26.x86_64
+└─pkgconf-pkg-config-1.3.6-1.fc26.x86_64 requires pkgconf(x86-64) = 1.3.6-1.fc26
+pkgconf-m4-1.3.6-1.fc26.noarch
+└─pkgconf-pkg-config-1.3.6-1.fc26.x86_64 requires pkgconf-m4 = 1.3.6-1.fc26
+libpkgconf-1.3.6-1.fc26.x86_64
+├─pkgconf-1.3.6-1.fc26.x86_64 requires libpkgconf.so.2()(64bit)
+└─pkgconf-1.3.6-1.fc26.x86_64 requires libpkgconf(x86-64) = 1.3.6-1.fc26
+glibc-devel-2.25-4.fc26.x86_64
+└─gcc-7.1.1-1.fc26.x86_64 requires glibc-devel >= 2.2.90-12
+glibc-headers-2.25-4.fc26.x86_64
+├─glibc-devel-2.25-4.fc26.x86_64 requires glibc-headers
+└─glibc-devel-2.25-4.fc26.x86_64 requires glibc-headers = 2.25-4.fc26
+kernel-headers-4.11.0-2.fc26.x86_64
+├─glibc-headers-2.25-4.fc26.x86_64 requires kernel-headers >= 2.2.1
+└─glibc-headers-2.25-4.fc26.x86_64 requires kernel-headers
+coreutils-8.27-5.fc26.x86_64
+└─util-linux-2.29.1-2.fc26.x86_64 requires coreutils
+coreutils-common-8.27-5.fc26.x86_64
+└─coreutils-8.27-5.fc26.x86_64 requires coreutils-common = 8.27-5.fc26
+libcrypt-nss-2.25-4.fc26.x86_64
+├─util-linux-2.29.1-2.fc26.x86_64 requires libcrypt.so.1()(64bit)
+└─util-linux-2.29.1-2.fc26.x86_64 requires libcrypt.so.1(GLIBC_2.2.5)(64bit)
+fedora-release-26-0.5.noarch
+└─setup-2.10.5-2.fc26.noarch requires system-release
+fedora-repos-26-0.8.noarch
+└─fedora-release-26-0.5.noarch requires fedora-repos(26)
+glibc-all-langpacks-2.25-4.fc26.x86_64
+└─glibc-2.25-4.fc26.x86_64 requires glibc-langpack = 2.25-4.fc26
+perl-threads-1:2.15-1.fc26.x86_64
+libpkgconf-1.3.6-1.fc26.x86_64
+perl-threads-shared-1.55-2.fc26.x86_64
+qrencode-libs-3.4.2-7.fc26.x86_64
+gawk-4.1.4-3.fc26.x86_64
+libseccomp-2.3.2-1.fc26.x86_64
+initscripts-9.70-1.fc26.x86_64
+emacs-filesystem-1:25.2-2.fc26.noarch
+openldap-2.4.44-10.fc26.x86_64
+libunistring-0.9.7-1.fc26.x86_64
+libselinux-2.6-6.fc26.x86_64
+unzip-6.0-33.fc26.x86_64
+perl-MIME-Base64-3.15-366.fc26.x86_64
+perl-File-Path-2.12-366.fc26.noarch
+xz-libs-5.2.3-2.fc26.x86_64
+libsemanage-2.6-4.fc26.x86_64
+gcc-7.1.1-1.fc26.x86_64
+dwz-0.12-3.fc26.x86_64
+pkgconf-1.3.6-1.fc26.x86_64
+pkgconf-m4-1.3.6-1.fc26.noarch
+libattr-2.4.47-18.fc26.x86_64
+libsepol-2.6-1.fc26.x86_64
+pkgconf-pkg-config-1.3.6-1.fc26.x86_64
+perl-File-Temp-0.230.400-2.fc26.noarch
+cyrus-sasl-lib-2.1.26-32.fc26.x86_64
+perl-PathTools-3.63-367.fc26.x86_64
+ipcalc-0.1.8-2.fc26.x86_64
+acl-2.2.52-13.fc26.x86_64
+libblkid-2.29.1-2.fc26.x86_64
+ocaml-srpm-macros-4-2.fc26.noarch
+iproute-4.10.0-2.fc26.x86_64
+libutempter-1.1.6-9.fc26.x86_64
+libuuid-2.29.1-2.fc26.x86_64
+perl-4:5.24.1-390.fc26.x86_64
+libpsl-0.17.0-2.fc26.x86_64
+filesystem-3.2-40.fc26.x86_64
+p11-kit-0.23.5-1.fc26.x86_64
+libsigsegv-2.11-1.fc26.x86_64
+p11-kit-trust-0.23.5-1.fc26.x86_64
+ustr-1.0.4-22.fc26.x86_64
+findutils-1:4.6.0-12.fc26.x86_64
+libverto-0.2.6-7.fc26.x86_64
+go-srpm-macros-2-8.fc26.noarch
+libsmartcols-2.29.1-2.fc26.x86_64
+iptables-libs-1.6.1-2.fc26.x86_64
+perl-Getopt-Long-2.49.1-2.fc26.noarch
+perl-Pod-Escapes-1:1.07-366.fc26.noarch
+util-linux-2.29.1-2.fc26.x86_64
+iputils-20161105-2.fc26.x86_64
+glib2-2.52.2-2.fc26.x86_64
+krb5-libs-1.15.1-8.fc26.x86_64
+libpwquality-1.3.0-8.fc26.x86_64
+perl-Pod-Perldoc-3.28-1.fc26.noarch
+glibc-2.25-4.fc26.x86_64
+perl-Pod-Simple-1:3.35-2.fc26.noarch
+glibc-all-langpacks-2.25-4.fc26.x86_64
+procps-ng-3.3.10-13.fc26.x86_64
+glibc-common-2.25-4.fc26.x86_64
+glibc-devel-2.25-4.fc26.x86_64
+libgomp-7.1.1-1.fc26.x86_64
+glibc-headers-2.25-4.fc26.x86_64
+perl-Pod-Usage-4:1.69-2.fc26.noarch
+libnghttp2-1.21.1-1.fc26.x86_64
+coreutils-8.27-5.fc26.x86_64
+coreutils-common-8.27-5.fc26.x86_64
+libgpg-error-1.25-2.fc26.x86_64
+perl-Text-ParseWords-3.30-366.fc26.noarch
+pam-1.3.0-2.fc26.x86_64
+sed-4.4-1.fc26.x86_64
+ghc-srpm-macros-1.4.2-5.fc26.noarch
+dbus-1:1.11.12-1.fc26.x86_64
+perl-Text-Tabs+Wrap-2013.0523-366.fc26.noarch
+sqlite-libs-3.18.0-1.fc26.x86_64
+basesystem-11-3.fc26.noarch
+bash-4.4.12-4.fc26.x86_64
+systemd-233-4.fc27.x86_64
+cpio-2.12-4.fc26.x86_64
+libedit-3.1-17.20160618cvs.fc26.x86_64
+systemd-libs-233-4.fc27.x86_64
+cpp-7.1.1-1.fc26.x86_64
+systemd-pam-233-4.fc27.x86_64
+dbus-libs-1:1.11.12-1.fc26.x86_64
+isl-0.16.1-1.fc26.x86_64
+libcap-2.25-5.fc26.x86_64
+nspr-4.14.0-2.fc26.x86_64
+libcap-ng-0.7.8-3.fc26.x86_64
+nss-3.30.2-1.0.fc26.x86_64
+perl-Time-Local-1:1.250-2.fc26.noarch
+gdbm-1.13-1.fc26.x86_64
+libssh2-1.8.0-2.fc26.x86_64
+nss-pem-1.0.3-3.fc26.x86_64
+cracklib-2.9.6-5.fc26.x86_64
+nss-softokn-3.30.2-1.0.fc26.x86_64
+nss-softokn-freebl-3.30.2-1.0.fc26.x86_64
+nss-sysinit-3.30.2-1.0.fc26.x86_64
+nss-tools-3.30.2-1.0.fc26.x86_64
+gmp-1:6.1.2-4.fc26.x86_64
+nss-util-3.30.2-1.0.fc26.x86_64
+libstdc++-7.1.1-1.fc26.x86_64
+perl-Scalar-List-Utils-3:1.47-2.fc26.x86_64
+lz4-libs-1.7.5-3.fc26.x86_64
+setup-2.10.5-2.fc26.noarch
+gnat-srpm-macros-4-2.fc26.noarch
+lzo-2.08-9.fc26.x86_64
+readline-7.0-5.fc26.x86_64
+perl-HTTP-Tiny-0.070-2.fc26.noarch
+rpm-4.13.0.1-4.fc26.x86_64
+crypto-policies-20170330-3.git55b66da.fc26.noarch
+zip-3.0-18.fc26.x86_64
+perl-Unicode-Normalize-1.25-366.fc26.x86_64
+rpm-libs-4.13.0.1-4.fc26.x86_64
+perl-Socket-4:2.024-2.fc26.x86_64
+jemalloc-4.5.0-1.fc26.x86_64
+tzdata-2017b-1.fc26.noarch
+rpm-plugin-selinux-4.13.0.1-4.fc26.x86_64
+shadow-utils-2:4.3.1-3.fc26.x86_64
+perl-IO-1.36-390.fc26.x86_64
+publicsuffix-list-dafsa-20170424-1.fc26.noarch
+audit-libs-2.7.6-1.fc26.x86_64
+cryptsetup-libs-1.7.5-1.fc26.x86_64
+openssl-libs-1:1.1.0e-1.fc26.x86_64
+zlib-1.2.11-2.fc26.x86_64
+chkconfig-1.10-1.fc26.x86_64
+redhat-rpm-config-63-1.fc26.noarch
+grep-3.0-1.fc26.x86_64
+libtasn1-4.10-2.fc26.x86_64
+binutils-2.27-21.fc26.x86_64
+kernel-headers-4.11.0-2.fc26.x86_64
+bzip2-libs-1.0.6-22.fc26.x86_64
+libfdisk-2.29.1-2.fc26.x86_64
+libcom_err-1.43.4-2.fc26.x86_64
+varnish-5.0.0-1.fc26.x86_64
+varnish-libs-5.0.0-1.fc26.x86_64
+libffi-3.1-10.fc26.x86_64
+fedora-release-26-0.5.noarch
+keyutils-libs-1.5.10-1.fc26.x86_64
+logrotate-3.12.1-1.fc26.x86_64
+ca-certificates-2017.2.14-1.0.fc26.noarch
+fedora-repos-26-0.8.noarch
+hostname-3.18-2.fc26.x86_64
+fedora-rpm-macros-26-2.fc26.noarch
+fpc-srpm-macros-1.1-2.fc26.noarch
+ncurses-6.0-8.20170212.fc26.x86_64
+ncurses-base-6.0-8.20170212.fc26.noarch
+qt5-srpm-macros-5.8.0-2.fc26.noarch
+libcrypt-nss-2.25-4.fc26.x86_64
+perl-Carp-1.40-366.fc26.noarch
+ncurses-libs-6.0-8.20170212.fc26.x86_64
+groff-base-1.22.3-9.fc26.x86_64
+mpfr-3.1.5-3.fc26.x86_64
+libcurl-7.53.1-7.fc26.x86_64
+libidn-1.33-2.fc26.x86_64
+device-mapper-1.02.137-6.fc26.x86_64
+libidn2-2.0.2-1.fc26.x86_64
+device-mapper-libs-1.02.137-6.fc26.x86_64
+libmetalink-0.1.3-2.fc26.x86_64
+perl-Term-ANSIColor-4.06-2.fc26.noarch
+perl-Encode-4:2.88-6.fc26.x86_64
+perl-Term-Cap-1.17-366.fc26.noarch
+libacl-2.2.52-13.fc26.x86_64
+libxml2-2.9.4-2.fc26.x86_64
+perl-constant-1.33-368.fc26.noarch
+perl-Errno-1.25-390.fc26.x86_64
+libdb-5.3.28-17.fc26.x86_64
+libmnl-1.0.4-2.fc26.x86_64
+popt-1.16-8.fc26.x86_64
+python-srpm-macros-3-20.fc26.noarch
+perl-Exporter-5.72-367.fc26.noarch
+libdb-utils-5.3.28-17.fc26.x86_64
+libpcap-14:1.8.1-3.fc26.x86_64
+libgcc-7.1.1-1.fc26.x86_64
+perl-libs-4:5.24.1-390.fc26.x86_64
+perl-macros-4:5.24.1-390.fc26.x86_64
+elfutils-default-yama-scope-0.169-1.fc26.noarch
+curl-7.53.1-7.fc26.x86_64
+libgcrypt-1.7.6-2.fc26.x86_64
+elfutils-libelf-0.169-1.fc26.x86_64
+pcre-8.40-7.fc26.x86_64
+libarchive-3.2.2-4.fc26.x86_64
+libmount-2.29.1-2.fc26.x86_64
+perl-parent-1:0.236-2.fc26.noarch
+expat-2.2.0-2.fc26.x86_64
+elfutils-libs-0.169-1.fc26.x86_64
+kmod-24-1.fc26.x86_64
+perl-podlators-4.09-2.fc26.noarch
+kmod-libs-24-1.fc26.x86_64
+libmpc-1.0.2-6.fc26.x86_64
+lua-libs-5.3.4-1.fc26.x86_64
+perl-srpm-macros-1-21.fc26.noarch
+gzip-1.8-2.fc26.x86_64
+info-6.3-3.fc26.x86_64
+fedora-repos-26-0.8.src
+fedora-rpm-macros-26-2.fc26.src
+bzip2-1.0.6-22.fc26.src
+redhat-rpm-config-63-1.fc26.src
+e2fsprogs-1.43.4-2.fc26.src
+libdb-5.3.28-17.fc26.src
+zip-3.0-18.fc26.src
+gmp-1:6.1.2-4.fc26.src
+shadow-utils-2:4.3.1-3.fc26.src
+perl-File-Path-2.12-366.fc26.src
+ca-certificates-2017.2.14-1.0.fc26.src
+libtasn1-4.10-2.fc26.src
+gnat-srpm-macros-4-2.fc26.src
+zlib-1.2.11-2.fc26.src
+perl-Text-ParseWords-3.30-366.fc26.src
+curl-7.53.1-7.fc26.src
+perl-Pod-Escapes-1:1.07-366.fc26.src
+perl-File-Temp-0.230.400-2.fc26.src
+perl-Pod-Perldoc-3.28-1.fc26.src
+perl-Text-Tabs+Wrap-2013.0523-366.fc26.src
+perl-Pod-Simple-1:3.35-2.fc26.src
+libedit-3.1-17.20160618cvs.fc26.src
+perl-Pod-Usage-4:1.69-2.fc26.src
+nspr-4.14.0-2.fc26.src
+nss-3.30.2-1.0.fc26.src
+libunistring-0.9.7-1.fc26.src
+cyrus-sasl-2.1.26-32.fc26.src
+nss-pem-1.0.3-3.fc26.src
+nss-softokn-3.30.2-1.0.fc26.src
+nss-util-3.30.2-1.0.fc26.src
+libutempter-1.1.6-9.fc26.src
+systemd-233-4.fc27.src
+filesystem-3.2-40.fc26.src
+libverto-0.2.6-7.fc26.src
+libffi-3.1-10.fc26.src
+findutils-1:4.6.0-12.fc26.src
+perl-Time-Local-1:1.250-2.fc26.src
+jemalloc-4.5.0-1.fc26.src
+pcre-8.40-7.fc26.src
+tzdata-2017b-1.fc26.src
+perl-Getopt-Long-2.49.1-2.fc26.src
+libgcrypt-1.7.6-2.fc26.src
+dbus-1:1.11.12-1.fc26.src
+grep-3.0-1.fc26.src
+libxml2-2.9.4-2.fc26.src
+pkgconf-1.3.6-1.fc26.src
+libgpg-error-1.25-2.fc26.src
+rpm-4.13.0.1-4.fc26.src
+perl-4:5.24.1-390.fc26.src
+groff-1.22.3-9.fc26.src
+perl-Scalar-List-Utils-3:1.47-2.fc26.src
+mpfr-3.1.5-3.fc26.src
+kmod-24-1.fc26.src
+perl-Unicode-Normalize-1.25-366.fc26.src
+elfutils-0.169-1.fc26.src
+emacs-1:25.2-2.fc26.src
+libidn-1.33-2.fc26.src
+libidn2-2.0.2-1.fc26.src
+chkconfig-1.10-1.fc26.src
+attr-2.4.47-18.fc26.src
+perl-Socket-4:2.024-2.fc26.src
+ocaml-srpm-macros-4-2.fc26.src
+audit-2.7.6-1.fc26.src
+fpc-srpm-macros-1.1-2.fc26.src
+go-srpm-macros-2-8.fc26.src
+unzip-6.0-33.fc26.src
+krb5-1.15.1-8.fc26.src
+fedora-release-26-0.5.src
+ghc-srpm-macros-1.4.2-5.fc26.src
+ustr-1.0.4-22.fc26.src
+util-linux-2.29.1-2.fc26.src
+logrotate-3.12.1-1.fc26.src
+popt-1.16-8.fc26.src
+perl-HTTP-Tiny-0.070-2.fc26.src
+acl-2.2.52-13.fc26.src
+varnish-5.0.0-1.fc26.src
+initscripts-9.70-1.fc26.src
+libmetalink-0.1.3-2.fc26.src
+texinfo-6.3-3.fc26.src
+libmnl-1.0.4-2.fc26.src
+libmpc-1.0.2-6.fc26.src
+basesystem-11-3.fc26.src
+bash-4.4.12-4.fc26.src
+python-rpm-macros-3-20.fc26.src
+perl-constant-1.33-368.fc26.src
+lua-5.3.4-1.fc26.src
+ipcalc-0.1.8-2.fc26.src
+gzip-1.8-2.fc26.src
+perl-Term-ANSIColor-4.06-2.fc26.src
+perl-Term-Cap-1.17-366.fc26.src
+iproute-4.10.0-2.fc26.src
+procps-ng-3.3.10-13.fc26.src
+qrencode-3.4.2-7.fc26.src
+iptables-1.6.1-2.fc26.src
+iputils-20161105-2.fc26.src
+sqlite-3.18.0-1.fc26.src
+perl-parent-1:0.236-2.fc26.src
+qt5-5.8.0-2.fc26.src
+ncurses-6.0-8.20170212.fc26.src
+libssh2-1.8.0-2.fc26.src
+perl-podlators-4.09-2.fc26.src
+isl-0.16.1-1.fc26.src
+perl-srpm-macros-1-21.fc26.src
+openldap-2.4.44-10.fc26.src
+perl-threads-1:2.15-1.fc26.src
+perl-threads-shared-1.55-2.fc26.src
+binutils-2.27-21.fc26.src
+publicsuffix-list-20170424-1.fc26.src
+lvm2-2.02.168-6.fc26.src
+gawk-4.1.4-3.fc26.src
+gcc-7.1.1-1.fc26.src
+openssl-1:1.1.0e-1.fc26.src
+libpcap-14:1.8.1-3.fc26.src
+gdbm-1.13-1.fc26.src
+perl-Carp-1.40-366.fc26.src
+expat-2.2.0-2.fc26.src
+glib2-2.52.2-2.fc26.src
+glibc-2.25-4.fc26.src
+libpsl-0.17.0-2.fc26.src
+perl-Encode-4:2.88-6.fc26.src
+lz4-1.7.5-3.fc26.src
+libpwquality-1.3.0-8.fc26.src
+hostname-3.18-2.fc26.src
+xz-5.2.3-2.fc26.src
+lzo-2.08-9.fc26.src
+nghttp2-1.21.1-1.fc26.src
+coreutils-8.27-5.fc26.src
+cpio-2.12-4.fc26.src
+libarchive-3.2.2-4.fc26.src
+perl-Exporter-5.72-367.fc26.src
+kernel-4.11.0-2.fc26.src
+cracklib-2.9.6-5.fc26.src
+keyutils-1.5.10-1.fc26.src
+libseccomp-2.3.2-1.fc26.src
+libselinux-2.6-6.fc26.src
+libsemanage-2.6-4.fc26.src
+libsepol-2.6-1.fc26.src
+sed-4.4-1.fc26.src
+libcap-2.25-5.fc26.src
+libcap-ng-0.7.8-3.fc26.src
+perl-PathTools-3.63-367.fc26.src
+p11-kit-0.23.5-1.fc26.src
+perl-MIME-Base64-3.15-366.fc26.src
+crypto-policies-20170330-3.git55b66da.fc26.src
+libsigsegv-2.11-1.fc26.src
+cryptsetup-1.7.5-1.fc26.src
+dwz-0.12-3.fc26.src
+readline-7.0-5.fc26.src
+pam-1.3.0-2.fc26.src
+setup-2.10.5-2.fc26.src
